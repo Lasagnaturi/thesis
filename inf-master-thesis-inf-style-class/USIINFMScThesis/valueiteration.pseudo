@@ -1,0 +1,7 @@
+Initialize V(s) to arbitrary values
+Repeat
+    for all s in S
+        for all a in A
+            Q(s,a) = E[r|s,a] + (*$\gamma \sum_{s^{'} \in S} P(s^{'}\mid s,a) V(s^{'})$*)
+        (*$V(s) = max_a Q(s,a)$*)
+until V(s) converges

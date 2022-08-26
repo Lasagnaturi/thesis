@@ -1,0 +1,97 @@
+\documentclass[mscthesis]{usiinfthesis}
+\usepackage{lipsum}
+\usepackage{mathtools}
+\usepackage{listings}
+\lstset
+{
+    language=Python,
+    breaklines=true,
+    basicstyle=\footnotesize,
+    frame=single,
+    numbers=left,
+    stepnumber=1,
+    tabsize=1,
+    frameround=fttt
+}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\graphicspath{{images/}}
+
+\lstdefinelanguage{algebra}
+{morekeywords={import,sort,constructors,observers,transformers,axioms,if,
+else,end},
+sensitive=false,
+morecomment=[l]{//s},
+}
+
+\title{Reinforcement learning vs supervised learning} %compulsory
+\specialization{Major in Artificial intelligence}%optional
+\subtitle{A comparison on DonkeyCar autonomous driving} %optional 
+\author{Giorgio Macauda} %compulsory
+\begin{committee}
+\advisor{Prof.}{Paolo}{Tonella} %compulsory
+\coadvisor{PhD}{Matteo}{Biagiola}{} %optional
+\end{committee}
+\Day{12} %compulsory
+\Month{September} %compulsory
+\Year{2022} %compulsory, put only the year
+\place{Lugano} %compulsory
+
+\dedication{To my beloved} %optional
+\openepigraph{Someone said \dots}{Someone} %optional
+
+%\makeindex %optional, also comment out \theindex at the end
+
+\begin{document}
+
+\maketitle %generates the titlepage, this is FIXED
+
+\frontmatter %generates the frontmatter, this is FIXED
+
+\begin{abstract}
+This is a very abstract abstract. 
+
+\lipsum
+\end{abstract}
+\begin{acknowledgements}
+\lipsum 
+\end{acknowledgements}
+
+\tableofcontents 
+\listoffigures %optional
+\listoftables %optional
+
+\mainmatter
+
+\include{introduction.tex}
+
+\include{background.tex}
+\input{related.tex}
+\input{setup.tex}
+\input{experiments.tex}
+
+\chapter{Future work and conclusion}
+ciao
+
+\appendix %optional, use only if you have an appendix
+
+\chapter{Some retarded material}
+Lara
+\section{It's over\dots}
+Ciaooo mbareeeeee
+
+\backmatter
+
+\chapter{Glossary} %optional
+
+%\bibliographystyle{alpha}
+%\bibliographystyle{dcu}
+\bibliographystyle{plainnat}
+\bibliography{biblio}
+
+%\cleardoublepage
+%\theindex %optional, use only if you have an index, must use
+	  %\makeindex in the preamble
+
+\end{document}

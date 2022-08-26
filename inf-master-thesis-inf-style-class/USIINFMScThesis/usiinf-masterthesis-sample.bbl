@@ -1,0 +1,159 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alpaydin(2014)]{Alpaydin:2014:IML:2635955}
+Ethem Alpaydin.
+\newblock \emph{Introduction to Machine Learning}.
+\newblock The MIT Press, 2014.
+\newblock ISBN 0262028182, 9780262028189.
+
+\bibitem[Cheng et~al.(2018)Cheng, Sun, Takeuchi, and Katto]{8456308}
+Zhengxue Cheng, Heming Sun, Masaru Takeuchi, and Jiro Katto.
+\newblock Deep convolutional autoencoder-based lossy image compression.
+\newblock In \emph{2018 Picture Coding Symposium (PCS)}, pages 253--257, 2018.
+\newblock \doi{10.1109/PCS.2018.8456308}.
+
+\bibitem[Gondara(2016)]{7836672}
+Lovedeep Gondara.
+\newblock Medical image denoising using convolutional denoising autoencoders.
+\newblock In \emph{2016 IEEE 16th International Conference on Data Mining
+  Workshops (ICDMW)}, pages 241--246, 2016.
+\newblock \doi{10.1109/ICDMW.2016.0041}.
+
+\bibitem[Goodfellow et~al.(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio]{art:gan}
+Ian~J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David
+  Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+\newblock Generative adversarial networks, 2014.
+\newblock URL \url{https://arxiv.org/abs/1406.2661}.
+
+\bibitem[Haarnoja et~al.(2018)Haarnoja, Zhou, Abbeel, and Levine]{art:sac}
+Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, and Sergey Levine.
+\newblock Soft actor-critic: Off-policy maximum entropy deep reinforcement
+  learning with a stochastic actor, 2018.
+\newblock URL \url{https://arxiv.org/abs/1801.01290}.
+
+\bibitem[Hinton and Salakhutdinov(2006)]{doi:10.1126/science.1127647}
+G.~E. Hinton and R.~R. Salakhutdinov.
+\newblock Reducing the dimensionality of data with neural networks.
+\newblock \emph{Science}, 313\penalty0 (5786):\penalty0 504--507, 2006.
+\newblock \doi{10.1126/science.1127647}.
+\newblock URL \url{https://www.science.org/doi/abs/10.1126/science.1127647}.
+
+\bibitem[Hou et~al.(2017)Hou, Shen, Sun, and Qiu]{7926714}
+Xianxu Hou, Linlin Shen, Ke~Sun, and Guoping Qiu.
+\newblock Deep feature consistent variational autoencoder.
+\newblock In \emph{2017 IEEE Winter Conference on Applications of Computer
+  Vision (WACV)}, pages 1133--1141, 2017.
+\newblock \doi{10.1109/WACV.2017.131}.
+
+\bibitem[Isola et~al.(2017)Isola, Zhu, Zhou, and Efros]{Isola_2017_CVPR}
+Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, and Alexei~A. Efros.
+\newblock Image-to-image translation with conditional adversarial networks.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, July 2017.
+
+\bibitem[Karacan et~al.(2016)Karacan, Akata, Erdem, and Erdem]{karakan}
+Levent Karacan, Zeynep Akata, Aykut Erdem, and Erkut Erdem.
+\newblock Learning to generate images of outdoor scenes from attributes and
+  semantic layouts.
+\newblock 12 2016.
+
+\bibitem[Karras et~al.(2017)Karras, Aila, Laine, and
+  Lehtinen]{https://doi.org/10.48550/arxiv.1710.10196}
+Tero Karras, Timo Aila, Samuli Laine, and Jaakko Lehtinen.
+\newblock Progressive growing of gans for improved quality, stability, and
+  variation, 2017.
+\newblock URL \url{https://arxiv.org/abs/1710.10196}.
+
+\bibitem[Lesort et~al.(2018)Lesort, Rodr{\'{\i}}guez, Goudou, and
+  Filliat]{DBLP:journals/corr/abs-1802-04181}
+Timoth{\'{e}}e Lesort, Natalia~D{\'{\i}}az Rodr{\'{\i}}guez,
+  Jean{-}Fran{\c{c}}ois Goudou, and David Filliat.
+\newblock State representation learning for control: An overview.
+\newblock \emph{CoRR}, abs/1802.04181, 2018.
+\newblock URL \url{http://arxiv.org/abs/1802.04181}.
+
+\bibitem[Liang et~al.(2017)Liang, Hu, Zhang, Gan, and Xing]{Liang_2017_ICCV}
+Xiaodan Liang, Zhiting Hu, Hao Zhang, Chuang Gan, and Eric~P. Xing.
+\newblock Recurrent topic-transition gan for visual paragraph generation.
+\newblock In \emph{Proceedings of the IEEE International Conference on Computer
+  Vision (ICCV)}, Oct 2017.
+
+\bibitem[Liu and Liu(2019)]{8852155}
+Danyang Liu and Gongshen Liu.
+\newblock A transformer-based variational autoencoder for sentence generation.
+\newblock In \emph{2019 International Joint Conference on Neural Networks
+  (IJCNN)}, pages 1--7, 2019.
+\newblock \doi{10.1109/IJCNN.2019.8852155}.
+
+\bibitem[Raffin et~al.(2022)Raffin, Kober, and Stulp]{pmlr-v164-raffin22a}
+Antonin Raffin, Jens Kober, and Freek Stulp.
+\newblock Smooth exploration for robotic reinforcement learning.
+\newblock In Aleksandra Faust, David Hsu, and Gerhard Neumann, editors,
+  \emph{Proceedings of the 5th Conference on Robot Learning}, volume 164 of
+  \emph{Proceedings of Machine Learning Research}, pages 1634--1644. PMLR,
+  08--11 Nov 2022.
+\newblock URL \url{https://proceedings.mlr.press/v164/raffin22a.html}.
+
+\bibitem[Sangkloy et~al.(2016)Sangkloy, Lu, Fang, Yu, and
+  Hays]{https://doi.org/10.48550/arxiv.1612.00835}
+Patsorn Sangkloy, Jingwan Lu, Chen Fang, Fisher Yu, and James Hays.
+\newblock Scribbler: Controlling deep image synthesis with sketch and color,
+  2016.
+\newblock URL \url{https://arxiv.org/abs/1612.00835}.
+
+\bibitem[Sutton and Barto(2018)]{Sutton1998}
+Richard~S. Sutton and Andrew~G. Barto.
+\newblock \emph{Reinforcement Learning: An Introduction}.
+\newblock The MIT Press, second edition, 2018.
+\newblock URL \url{http://incompleteideas.net/book/the-book-2nd.html}.
+
+\bibitem[van Otterlo and Wiering(2012)]{vanOtterlo2012}
+Martijn van Otterlo and Marco Wiering.
+\newblock \emph{Reinforcement Learning and Markov Decision Processes}, pages
+  3--42.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2012.
+\newblock ISBN 978-3-642-27645-3.
+\newblock \doi{10.1007/978-3-642-27645-3_1}.
+\newblock URL \url{https://doi.org/10.1007/978-3-642-27645-3_1}.
+
+\bibitem[Viitala et~al.(2020)Viitala, Boney, and
+  Kannala]{DBLP:journals/corr/abs-2008-00715}
+Ari Viitala, Rinu Boney, and Juho Kannala.
+\newblock Learning to drive small scale cars from scratch.
+\newblock \emph{CoRR}, abs/2008.00715, 2020.
+\newblock URL \url{https://arxiv.org/abs/2008.00715}.
+
+\bibitem[Yarats et~al.(2019)Yarats, Zhang, Kostrikov, Amos, Pineau, and
+  Fergus]{DBLP:journals/corr/abs-1910-01741}
+Denis Yarats, Amy Zhang, Ilya Kostrikov, Brandon Amos, Joelle Pineau, and Rob
+  Fergus.
+\newblock Improving sample efficiency in model-free reinforcement learning from
+  images.
+\newblock \emph{CoRR}, abs/1910.01741, 2019.
+\newblock URL \url{http://arxiv.org/abs/1910.01741}.
+
+\bibitem[Zhang et~al.(2017)Zhang, Gan, Fan, Chen, Henao, Shen, and
+  Carin]{pmlr-v70-zhang17b}
+Yizhe Zhang, Zhe Gan, Kai Fan, Zhi Chen, Ricardo Henao, Dinghan Shen, and
+  Lawrence Carin.
+\newblock Adversarial feature matching for text generation.
+\newblock In Doina Precup and Yee~Whye Teh, editors, \emph{Proceedings of the
+  34th International Conference on Machine Learning}, volume~70 of
+  \emph{Proceedings of Machine Learning Research}, pages 4006--4015. PMLR,
+  06--11 Aug 2017.
+\newblock URL \url{https://proceedings.mlr.press/v70/zhang17b.html}.
+
+\bibitem[Zhu et~al.(2017)Zhu, Park, Isola, and Efros]{CycleGAN2017}
+Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei~A Efros.
+\newblock Unpaired image-to-image translation using cycle-consistent
+  adversarial networks.
+\newblock In \emph{Computer Vision (ICCV), 2017 IEEE International Conference
+  on}, 2017.
+
+\end{thebibliography}
