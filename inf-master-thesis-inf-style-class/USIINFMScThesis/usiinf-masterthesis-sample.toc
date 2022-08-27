@@ -30,10 +30,10 @@
 \contentsline {section}{\numberline {5.2}RL algorithm}{26}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Reward function}{26}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Training the simulated RL agent}{26}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Training the real RL agent}{27}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Sim to Real}{27}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Future work and conclusion}{29}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Some retarded material}{31}{appendix.A}%
-\contentsline {section}{\numberline {A.1}It's over\dots }{31}{section.A.1}%
-\contentsline {chapter}{Glossary}{33}{appendix*.21}%
-\contentsline {chapter}{Bibliography}{35}{section*.23}%
+\contentsline {subsection}{\numberline {5.2.3}Training the real RL agent}{28}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Sim to Real}{29}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Future work and conclusion}{31}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Some retarded material}{33}{appendix.A}%
+\contentsline {section}{\numberline {A.1}It's over\dots }{33}{section.A.1}%
+\contentsline {chapter}{Glossary}{35}{appendix*.25}%
+\contentsline {chapter}{Bibliography}{37}{section*.27}%

@@ -2,6 +2,7 @@
 \usepackage{lipsum}
 \usepackage{mathtools}
 \usepackage{listings}
+\usepackage{subcaption}
 \lstset
 {
     language=Python,
@@ -51,7 +52,6 @@ morecomment=[l]{//s},
 
 \begin{abstract}
 This is a very abstract abstract. 
-
 \lipsum
 \end{abstract}
 \begin{acknowledgements}
@@ -66,13 +66,11 @@ This is a very abstract abstract.
 
 \include{introduction.tex}
 
-\include{background.tex}
+\input{background.tex}
 \input{related.tex}
 \input{setup.tex}
 \input{experiments.tex}
-
-\chapter{Future work and conclusion}
-ciao
+\input{conclusion.tex}
 
 \appendix %optional, use only if you have an appendix
 

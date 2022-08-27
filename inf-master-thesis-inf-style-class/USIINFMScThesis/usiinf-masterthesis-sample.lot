@@ -7,6 +7,7 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces AE trained in real world - reconstruction loss\relax }}{24}{table.caption.20}%
 \contentsline {table}{\numberline {5.3}{\ignorespaces VAE trained in simulation - reconstruction loss\relax }}{24}{table.caption.20}%
 \contentsline {table}{\numberline {5.4}{\ignorespaces VAE trained in real world - reconstruction loss\relax }}{24}{table.caption.20}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Agents results averaged over 10 laps. Out Of Track (OOT) measures crashes, Out of Bound Error measure how many times it exceed the max CTE, and finally LAPS counts the completed laps.\relax }}{28}{table.caption.23}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

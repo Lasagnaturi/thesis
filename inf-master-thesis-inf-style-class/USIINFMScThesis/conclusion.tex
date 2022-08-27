@@ -1,0 +1,11 @@
+\chapter{Future work and conclusion}
+
+Another reward function was initally tested trying to improve the total time an agent takes to complete a lap:
+\begin{equation}
+  \label{eq:testreward}
+  r_t = - 0.1 + throttle\_reward + cte\_penalty + \left\{\begin{matrix}
+    if done & crash\_error \\ 
+    else & 0  
+    \end{matrix}\right.
+\end{equation}
+The idea behind this function is that any step gives a negative reward and thus the agent must finish a lap in the smallest number of step to maximize the total episode reward. Minimizing the number steps means also finding the shortest way and consequently reducing the total time spent for a lap. Unfortunately, this approach did not let the agent learn to drive decently, at least in reasonable time.

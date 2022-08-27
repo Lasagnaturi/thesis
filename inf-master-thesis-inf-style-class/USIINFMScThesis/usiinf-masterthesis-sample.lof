@@ -21,6 +21,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Real world image processed after cropping with a VAE, z\_size=64 and no augmentation. Reconstruction\_loss=112\relax }}{23}{figure.caption.18}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Simulator image processed after cropping with a VAE, z\_size=64 and no augmentation. Reconstruction\_loss=17\relax }}{24}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Agents trained in simulation. Each agent has been trained with a different starting modality and has been trained for 100k steps.\relax }}{27}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Spotted bug in the simulator\relax }}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Agent trained in real world starting each lap on the latest checkpoint\relax }}{29}{figure.caption.24}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

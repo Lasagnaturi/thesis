@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.24)  26 AUG 2022 14:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.24)  28 AUG 2022 00:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/giorgiomacauda/universityStuff/thesis_tonella/simulator/donkey-urop/thesis/inf-master-thesis-inf-style-class/USIINFMScThesis/usiinf-masterthesis-sample.tex
-(/Users/giorgiomacauda/universityStuff/thesis_tonella/simulator/donkey-urop/thesis/inf-master-thesis-inf-style-class/USIINFMScThesis/usiinf-masterthesis-sample.tex
+**/Users/giorgiomacauda/universityStuff/thesis_tonella/simulator/thesis/inf-master-thesis-inf-style-class/USIINFMScThesis/usiinf-masterthesis-sample.tex
+(/Users/giorgiomacauda/universityStuff/thesis_tonella/simulator/thesis/inf-master-thesis-inf-style-class/USIINFMScThesis/usiinf-masterthesis-sample.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./usiinfthesis.cls
 Document Class: usiinfthesis 2010/04/14 v. 1.1.2 USI Informatics Doctoral Dissertation class
@@ -648,63 +648,67 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+\c@subfigure=\count346
+\c@subtable=\count347
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen197
 \WF@size=\dimen198
-\c@WF@wrappedlines=\count346
+\c@WF@wrappedlines=\count348
 \WF@box=\box56
 \WF@everypar=\toks48
 Package: wrapfig 2003/01/31  v 3.6
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip74
-\multirow@cntb=\count347
+\multirow@cntb=\count349
 \multirow@dima=\skip75
 \bigstrutjot=\dimen199
 )
 \dtldb@committee=\toks49
 \dtlkeys@committee=\toks50
-\dtlrows@committee=\count348
-\dtlcols@committee=\count349
- (./usiinf-masterthesis-sample.aux (./introduction.aux) (./background.aux)
+\dtlrows@committee=\count350
+\dtlcols@committee=\count351
+ (./usiinf-masterthesis-sample.aux (./introduction.aux)
 
 LaTeX Warning: Label `sec:donkeycar' multiply defined.
 
 )
 \openout1 = `usiinf-masterthesis-sample.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 46.
-LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 47.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 46.
-LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 46.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 47.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -749,16 +753,16 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count350
+\scratchcounter=\count352
 \scratchdimen=\dimen256
 \scratchbox=\box57
-\nofMPsegments=\count351
-\nofMParguments=\count352
+\nofMPsegments=\count353
+\nofMParguments=\count354
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count353
+\MPscratchCnt=\count355
 \MPscratchDim=\dimen257
-\MPnumerator=\count354
-\makeMPintoPDFobject=\count355
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
 \everyMPtoPDFconversion=\toks52
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -766,7 +770,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 47.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -774,117 +778,117 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count356
+\c@section@level=\count358
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
  (./usiinf-masterthesis-sample.out) (./usiinf-masterthesis-sample.out)
 \@outlinefile=\write4
 \openout4 = `usiinf-masterthesis-sample.out'.
 
-\c@lstlisting=\count357
+\c@lstlisting=\count359
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 16.58891pt on input line 49.
+(Font)              scaled to size 16.58891pt on input line 50.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 16.58891pt on input line 49.
-LaTeX Font Info:    Trying to load font information for T1+uop on input line 49.
-LaTeX Font Info:    No file T1uop.fd. on input line 49.
+(Font)              scaled to size 16.58891pt on input line 50.
+LaTeX Font Info:    Trying to load font information for T1+uop on input line 50.
+LaTeX Font Info:    No file T1uop.fd. on input line 50.
 
 
 LaTeX Font Warning: Font shape `T1/uop/b/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 49.
+(Font)              using `T1/cmr/m/n' instead on input line 50.
 
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 49.
+(Font)              scaled to size 11.52008pt on input line 50.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 49.
+(Font)              scaled to size 11.52008pt on input line 50.
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 49.
+(Font)              scaled to size 9.60007pt on input line 50.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 13.82408pt on input line 49.
+(Font)              scaled to size 13.82408pt on input line 50.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 13.82408pt on input line 49.
+(Font)              scaled to size 13.82408pt on input line 50.
 [0
 
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+mdbch on input line 50.
+LaTeX Font Info:    Trying to load font information for OT1+mdbch on input line 51.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/mathdesign/mdbch/ot1mdbch.fd
 File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
 )
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 50.
+(Font)              scaled to size 9.60007pt on input line 51.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 50.
+(Font)              scaled to size 6.72005pt on input line 51.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 50.
-LaTeX Font Info:    Trying to load font information for OML+mdbch on input line 50.
+(Font)              scaled to size 4.80003pt on input line 51.
+LaTeX Font Info:    Trying to load font information for OML+mdbch on input line 51.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd
 File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
 )
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 50.
+(Font)              scaled to size 9.60007pt on input line 51.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 6.72005pt on input line 50.
+(Font)              scaled to size 6.72005pt on input line 51.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 4.80003pt on input line 50.
-LaTeX Font Info:    Trying to load font information for OMS+mdbch on input line 50.
+(Font)              scaled to size 4.80003pt on input line 51.
+LaTeX Font Info:    Trying to load font information for OMS+mdbch on input line 51.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd
 File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
 )
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 50.
+(Font)              scaled to size 9.60007pt on input line 51.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 50.
+(Font)              scaled to size 6.72005pt on input line 51.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 50.
-LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line 50.
+(Font)              scaled to size 4.80003pt on input line 51.
+LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line 51.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 50.
+(Font)              scaled to size 9.60007pt on input line 51.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 50.
+(Font)              scaled to size 6.72005pt on input line 51.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 50.
+(Font)              scaled to size 4.80003pt on input line 51.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 50.
+(Font)              scaled to size 9.60007pt on input line 51.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 50.
+(Font)              scaled to size 6.72005pt on input line 51.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 50.
-LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line 50.
+(Font)              scaled to size 4.80003pt on input line 51.
+LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line 51.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 50.
+(Font)              scaled to size 9.60007pt on input line 51.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 50.
+(Font)              scaled to size 6.72005pt on input line 51.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 50.
-LaTeX Font Info:    Trying to load font information for MDB+mdbch on input line 50.
+(Font)              scaled to size 4.80003pt on input line 51.
+LaTeX Font Info:    Trying to load font information for MDB+mdbch on input line 51.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd
 File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
 )
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 50.
+(Font)              scaled to size 9.60007pt on input line 51.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 50.
+(Font)              scaled to size 6.72005pt on input line 51.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 50.
+(Font)              scaled to size 4.80003pt on input line 51.
 
 
 LaTeX Font Warning: Font shape `T1/uop/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 50.
+(Font)              using `T1/cmr/m/n' instead on input line 51.
 
 [1
 
@@ -893,48 +897,48 @@ LaTeX Font Warning: Font shape `T1/uop/m/n' undefined
 
 ]
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 13.82408pt on input line 50.
+(Font)              scaled to size 13.82408pt on input line 51.
  [3] [4
 
 ]
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 50.
+(Font)              scaled to size 8.64006pt on input line 51.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 50.
+(Font)              scaled to size 8.64006pt on input line 51.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 50.
+(Font)              scaled to size 5.76004pt on input line 51.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 8.64006pt on input line 50.
+(Font)              scaled to size 8.64006pt on input line 51.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.76004pt on input line 50.
+(Font)              scaled to size 5.76004pt on input line 51.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 50.
+(Font)              scaled to size 8.64006pt on input line 51.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 50.
+(Font)              scaled to size 5.76004pt on input line 51.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 50.
+(Font)              scaled to size 8.64006pt on input line 51.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 50.
+(Font)              scaled to size 5.76004pt on input line 51.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 50.
+(Font)              scaled to size 8.64006pt on input line 51.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 50.
+(Font)              scaled to size 5.76004pt on input line 51.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 50.
+(Font)              scaled to size 8.64006pt on input line 51.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 50.
+(Font)              scaled to size 5.76004pt on input line 51.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 50.
+(Font)              scaled to size 8.64006pt on input line 51.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 50.
+(Font)              scaled to size 5.76004pt on input line 51.
  [5] [6
 
 ]
-\c@oldpage=\count358
+\c@oldpage=\count360
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 23.88496pt on input line 53.
+(Font)              scaled to size 23.88496pt on input line 54.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 23.88496pt on input line 53.
+(Font)              scaled to size 23.88496pt on input line 54.
  [7
 
 ] [8] [9
@@ -978,17 +982,13 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 ) [1
 
 
-]
-\openout2 = `background.aux'.
-
- (./background.tex [2
-
+] (./background.tex [2
 
 
 
 ]
 Chapter 2.
-<images//background/rl.png, id=354, 1303.0281pt x 597.6729pt>
+<images//background/rl.png, id=365, 1303.0281pt x 597.6729pt>
 File: images//background/rl.png Graphic file (type png)
 <use images//background/rl.png>
 Package pdftex.def Info: images//background/rl.png  used on input line 11.
@@ -1020,7 +1020,7 @@ LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 (Font)              scaled to size 7.68005pt on input line 5.
 ) [4] (./policyiteration.pseudo)
-<images//background/cartpole.png, id=392, 602.25pt x 400.49625pt>
+<images//background/cartpole.png, id=403, 602.25pt x 400.49625pt>
 File: images//background/cartpole.png Graphic file (type png)
 <use images//background/cartpole.png>
 Package pdftex.def Info: images//background/cartpole.png  used on input line 88.
@@ -1033,13 +1033,13 @@ File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
 LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
 (Font)              scaled to size 9.60007pt on input line 105.
  [6 <./images//background/cartpole.png>]
-<images//background/sac.png, id=441, 1294.8375pt x 718.8456pt>
+<images//background/sac.png, id=452, 1294.8375pt x 718.8456pt>
 File: images//background/sac.png Graphic file (type png)
 <use images//background/sac.png>
 Package pdftex.def Info: images//background/sac.png  used on input line 132.
 (pdftex.def)             Requested size: 236.61682pt x 131.36098pt.
  [7 <./images//background/sac.png (PNG copy)>]
-<images//background/gan.png, id=449, 1503.6978pt x 597.6729pt>
+<images//background/gan.png, id=461, 1503.6978pt x 597.6729pt>
 File: images//background/gan.png Graphic file (type png)
 <use images//background/gan.png>
 Package pdftex.def Info: images//background/gan.png  used on input line 143.
@@ -1054,7 +1054,7 @@ Overfull \hbox (2.2699pt too wide) in paragraph at lines 151--152
 \T1/mdbch/m/n/10 two neu-ral net-works that are trained
  []
 
-<images//background/imagetranslation.png, id=465, 561.09625pt x 521.95pt>
+<images//background/imagetranslation.png, id=477, 561.09625pt x 521.95pt>
 File: images//background/imagetranslation.png Graphic file (type png)
 <use images//background/imagetranslation.png>
 Package pdftex.def Info: images//background/imagetranslation.png  used on input line 182.
@@ -1070,17 +1070,17 @@ Underfull \hbox (badness 5893) in paragraph at lines 190--193
  []
 
 [9 <./images//background/imagetranslation.png>]
-<images//background/ae.png, id=514, 1224.7356pt x 597.6729pt>
+<images//background/ae.png, id=525, 1224.7356pt x 597.6729pt>
 File: images//background/ae.png Graphic file (type png)
 <use images//background/ae.png>
 Package pdftex.def Info: images//background/ae.png  used on input line 222.
 (pdftex.def)             Requested size: 276.04895pt x 134.7077pt.
-<images//background/latentspace.png, id=515, 1405.25pt x 1053.9375pt>
+<images//background/latentspace.png, id=526, 1405.25pt x 1053.9375pt>
 File: images//background/latentspace.png Graphic file (type png)
 <use images//background/latentspace.png>
 Package pdftex.def Info: images//background/latentspace.png  used on input line 239.
 (pdftex.def)             Requested size: 187.31914pt x 140.49034pt.
-<images//background/vaelatentspace.png, id=516, 2409.0pt x 1806.75pt>
+<images//background/vaelatentspace.png, id=527, 2409.0pt x 1806.75pt>
 File: images//background/vaelatentspace.png Graphic file (type png)
 <use images//background/vaelatentspace.png>
 Package pdftex.def Info: images//background/vaelatentspace.png  used on input line 246.
@@ -1090,82 +1090,80 @@ Package pdftex.def Info: images//background/vaelatentspace.png  used on input li
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10 <./images//background/ae.png (PNG copy)>]
-<images//background/vae.png, id=529, 1503.6978pt x 597.6729pt>
+<images//background/vae.png, id=540, 1503.6978pt x 597.6729pt>
 File: images//background/vae.png Graphic file (type png)
 <use images//background/vae.png>
 Package pdftex.def Info: images//background/vae.png  used on input line 263.
 (pdftex.def)             Requested size: 315.48709pt x 125.39645pt.
  [11 <./images//background/latentspace.png (PNG copy)> <./images//background/vaelatentspace.png (PNG copy)> <./images//background/vae.png (PNG copy)>]
-<images//background/donkey.jpeg, id=538, 901.3675pt x 803.0pt>
+<images//background/donkey.jpeg, id=549, 901.3675pt x 803.0pt>
 File: images//background/donkey.jpeg Graphic file (type jpg)
 <use images//background/donkey.jpeg>
 Package pdftex.def Info: images//background/donkey.jpeg  used on input line 292.
 (pdftex.def)             Requested size: 197.17868pt x 175.65582pt.
-) [12 <./images//background/donkey.jpeg>] (./related.tex
+) (./related.tex [12 <./images//background/donkey.jpeg>]
 Chapter 3.
 
 Underfull \vbox (badness 5667) has occurred while \output is active []
 
  [13
 
-
-
 ] [14]) (./setup.tex [15] [16
 
 ]
 Chapter 4.
-<images//setup/usi_track_real.png, id=581, 4181.6225pt x 2926.935pt>
+<images//setup/usi_track_real.png, id=592, 4181.6225pt x 2926.935pt>
 File: images//setup/usi_track_real.png Graphic file (type png)
 <use images//setup/usi_track_real.png>
 Package pdftex.def Info: images//setup/usi_track_real.png  used on input line 10.
 (pdftex.def)             Requested size: 167.60307pt x 117.28076pt.
-<images//setup/usi_track.png, id=582, 636.12656pt x 397.485pt>
+<images//setup/usi_track.png, id=593, 636.12656pt x 397.485pt>
 File: images//setup/usi_track.png Graphic file (type png)
 <use images//setup/usi_track.png>
 Package pdftex.def Info: images//setup/usi_track.png  used on input line 16.
 (pdftex.def)             Requested size: 187.31914pt x 117.04477pt.
 [17 <./images//setup/usi_track_real.png> <./images//setup/usi_track.png>] [18] [19]
-<images//setup/s1.jpg, id=604, 321.2pt x 240.9pt>
+<images//setup/s1.jpg, id=615, 321.2pt x 240.9pt>
 File: images//setup/s1.jpg Graphic file (type jpg)
 <use images//setup/s1.jpg>
 Package pdftex.def Info: images//setup/s1.jpg  used on input line 69.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/s2.jpg, id=605, 321.2pt x 240.9pt>
+<images//setup/s2.jpg, id=616, 321.2pt x 240.9pt>
 File: images//setup/s2.jpg Graphic file (type jpg)
 <use images//setup/s2.jpg>
 Package pdftex.def Info: images//setup/s2.jpg  used on input line 73.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/s3.jpg, id=606, 321.2pt x 240.9pt>
+<images//setup/s3.jpg, id=617, 321.2pt x 240.9pt>
 File: images//setup/s3.jpg Graphic file (type jpg)
 <use images//setup/s3.jpg>
 Package pdftex.def Info: images//setup/s3.jpg  used on input line 77.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/r1.jpg, id=607, 321.2pt x 240.9pt>
+<images//setup/r1.jpg, id=618, 321.2pt x 240.9pt>
 File: images//setup/r1.jpg Graphic file (type jpg)
 <use images//setup/r1.jpg>
 Package pdftex.def Info: images//setup/r1.jpg  used on input line 86.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/r2.jpg, id=608, 321.2pt x 240.9pt>
+<images//setup/r2.jpg, id=619, 321.2pt x 240.9pt>
 File: images//setup/r2.jpg Graphic file (type jpg)
 <use images//setup/r2.jpg>
 Package pdftex.def Info: images//setup/r2.jpg  used on input line 90.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/r3.jpg, id=609, 321.2pt x 240.9pt>
+<images//setup/r3.jpg, id=620, 321.2pt x 240.9pt>
 File: images//setup/r3.jpg Graphic file (type jpg)
 <use images//setup/r3.jpg>
 Package pdftex.def Info: images//setup/r3.jpg  used on input line 94.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/cs1.jpg, id=612, 160.6pt x 80.3pt>
+<images//setup/cs1.jpg, id=623, 160.6pt x 80.3pt>
 File: images//setup/cs1.jpg Graphic file (type jpg)
 <use images//setup/cs1.jpg>
 Package pdftex.def Info: images//setup/cs1.jpg  used on input line 107.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
-<images//setup/cs2.jpg, id=613, 160.6pt x 80.3pt>
+<images//setup/cs2.jpg, id=624, 160.6pt x 80.3pt>
 File: images//setup/cs2.jpg Graphic file (type jpg)
 <use images//setup/cs2.jpg>
 Package pdftex.def Info: images//setup/cs2.jpg  used on input line 111.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
-<images//setup/cs3.jpg, id=614, 160.6pt x 80.3pt>
+<images//setup/cs3.jpg, id=625, 160.6pt x 80.3pt>
 File: images//setup/cs3.jpg Graphic file (type jpg)
 <use images//setup/cs3.jpg>
 Package pdftex.def Info: images//setup/cs3.jpg  used on input line 115.
@@ -1174,17 +1172,17 @@ Package pdftex.def Info: images//setup/cs3.jpg  used on input line 115.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images//setup/cr1.jpg, id=615, 160.6pt x 80.3pt>
+<images//setup/cr1.jpg, id=626, 160.6pt x 80.3pt>
 File: images//setup/cr1.jpg Graphic file (type jpg)
 <use images//setup/cr1.jpg>
 Package pdftex.def Info: images//setup/cr1.jpg  used on input line 124.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
-<images//setup/cr2.jpg, id=616, 160.6pt x 80.3pt>
+<images//setup/cr2.jpg, id=627, 160.6pt x 80.3pt>
 File: images//setup/cr2.jpg Graphic file (type jpg)
 <use images//setup/cr2.jpg>
 Package pdftex.def Info: images//setup/cr2.jpg  used on input line 128.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
-<images//setup/cr3.jpg, id=617, 160.6pt x 80.3pt>
+<images//setup/cr3.jpg, id=628, 160.6pt x 80.3pt>
 File: images//setup/cr3.jpg Graphic file (type jpg)
 <use images//setup/cr3.jpg>
 Package pdftex.def Info: images//setup/cr3.jpg  used on input line 132.
@@ -1196,22 +1194,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]
 Chapter 5.
-<images//experiments/11296.jpg, id=639, 321.2pt x 240.9pt>
+<images//experiments/11296.jpg, id=650, 321.2pt x 240.9pt>
 File: images//experiments/11296.jpg Graphic file (type jpg)
 <use images//experiments/11296.jpg>
 Package pdftex.def Info: images//experiments/11296.jpg  used on input line 10.
 (pdftex.def)             Requested size: 131.4527pt x 98.58934pt.
-<images//experiments/11296.png, id=640, 160.6pt x 80.3pt>
+<images//experiments/11296.png, id=651, 160.6pt x 80.3pt>
 File: images//experiments/11296.png Graphic file (type png)
 <use images//experiments/11296.png>
 Package pdftex.def Info: images//experiments/11296.png  used on input line 14.
 (pdftex.def)             Requested size: 118.30841pt x 59.15517pt.
-<images//experiments/1160.jpg, id=641, 321.2pt x 240.9pt>
+<images//experiments/1160.jpg, id=652, 321.2pt x 240.9pt>
 File: images//experiments/1160.jpg Graphic file (type jpg)
 <use images//experiments/1160.jpg>
 Package pdftex.def Info: images//experiments/1160.jpg  used on input line 22.
 (pdftex.def)             Requested size: 131.4527pt x 98.58934pt.
-<images//experiments/1160.png, id=642, 160.6pt x 80.3pt>
+<images//experiments/1160.png, id=653, 160.6pt x 80.3pt>
 File: images//experiments/1160.png Graphic file (type png)
 <use images//experiments/1160.png>
 Package pdftex.def Info: images//experiments/1160.png  used on input line 26.
@@ -1224,19 +1222,59 @@ LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 6.72005pt on input line 96.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 4.80003pt on input line 96.
- [26]) [27] [28
+<images//experiments/len_mean.png, id=725, 903.375pt x 602.25pt>
+File: images//experiments/len_mean.png Graphic file (type png)
+<use images//experiments/len_mean.png>
+Package pdftex.def Info: images//experiments/len_mean.png  used on input line 118.
+(pdftex.def)             Requested size: 197.17868pt x 131.44778pt.
+<images//experiments/rew_mean.png, id=726, 903.375pt x 602.25pt>
+File: images//experiments/rew_mean.png Graphic file (type png)
+<use images//experiments/rew_mean.png>
+Package pdftex.def Info: images//experiments/rew_mean.png  used on input line 124.
+(pdftex.def)             Requested size: 197.17868pt x 131.44778pt.
+<images//experiments/success_mean.png, id=727, 903.375pt x 602.25pt>
+File: images//experiments/success_mean.png Graphic file (type png)
+<use images//experiments/success_mean.png>
+Package pdftex.def Info: images//experiments/success_mean.png  used on input line 131.
+(pdftex.def)             Requested size: 197.17868pt x 131.44778pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26]
+<images//experiments/bug.png, id=736, 685.56125pt x 416.55624pt>
+File: images//experiments/bug.png Graphic file (type png)
+<use images//experiments/bug.png>
+Package pdftex.def Info: images//experiments/bug.png  used on input line 141.
+(pdftex.def)             Requested size: 197.17868pt x 119.80666pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27 <./images//experiments/len_mean.png (PNG copy)> <./images//experiments/rew_mean.png (PNG copy)> <./images//experiments/success_mean.png (PNG copy)>] [28 <./images//experiments/bug.png>]
+<images//experiments/real_len.png, id=752, 903.375pt x 602.25pt>
+File: images//experiments/real_len.png Graphic file (type png)
+<use images//experiments/real_len.png>
+Package pdftex.def Info: images//experiments/real_len.png  used on input line 172.
+(pdftex.def)             Requested size: 197.17868pt x 131.44778pt.
+<images//experiments/real_rew.png, id=753, 903.375pt x 602.25pt>
+File: images//experiments/real_rew.png Graphic file (type png)
+<use images//experiments/real_rew.png>
+Package pdftex.def Info: images//experiments/real_rew.png  used on input line 178.
+(pdftex.def)             Requested size: 197.17868pt x 131.44778pt.
+) (./conclusion.tex [29 <./images//experiments/real_len.png (PNG copy)> <./images//experiments/real_rew.png (PNG copy)>] [30
 
 ]
 Chapter 6.
-[29] [30
+) [31] [32
 
 ]
 Appendix A.
-[31] [32
+[33] [34
 
-] (./usiinf-masterthesis-sample.bbl [33
+] (./usiinf-masterthesis-sample.bbl [35
 
-] [34
+] [36
 
 ]
 Underfull \hbox (badness 1009) in paragraph at lines 15--19
@@ -1245,7 +1283,7 @@ Underfull \hbox (badness 1009) in paragraph at lines 15--19
 
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.43994pt on input line 32.
-[35]) [36] (./usiinf-masterthesis-sample.aux (./introduction.aux) (./background.aux))
+[37]) [38] (./usiinf-masterthesis-sample.aux (./introduction.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1253,21 +1291,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `usiinf-masterthesis-sample.out' has not changed.
-(rerunfilecheck)             Checksum: B251850524F5E50448F6644281C1AFE1;5610.
+(rerunfilecheck)             Checksum: 43BB2B4A82D88D1D764439CC1B1BF0A3;5610.
  ) 
 Here is how much of TeX's memory you used:
- 19826 strings out of 478268
- 318081 string characters out of 5846347
- 1240912 words of memory out of 5000000
- 37341 multiletter control sequences out of 15000+600000
- 546644 words of font info for 138 fonts, out of 8000000 for 9000
+ 19986 strings out of 478268
+ 321439 string characters out of 5846347
+ 1242500 words of memory out of 5000000
+ 37487 multiletter control sequences out of 15000+600000
+ 547409 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,12n,131p,2679b,1546s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chrma.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
-Output written on usiinf-masterthesis-sample.pdf (54 pages, 3775138 bytes).
+ 106i,12n,131p,2667b,1546s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chrma.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
+Output written on usiinf-masterthesis-sample.pdf (56 pages, 5244057 bytes).
 PDF statistics:
- 918 PDF objects out of 1000 (max. 8388607)
- 780 compressed objects within 8 object streams
- 243 named destinations out of 1000 (max. 500000)
- 453 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 961 PDF objects out of 1000 (max. 8388607)
+ 811 compressed objects within 9 object streams
+ 249 named destinations out of 1000 (max. 500000)
+ 483 words of extra memory for PDF output out of 10000 (max. 10000000)
 
