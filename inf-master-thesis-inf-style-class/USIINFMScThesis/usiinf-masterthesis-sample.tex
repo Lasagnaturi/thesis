@@ -3,6 +3,21 @@
 \usepackage{mathtools}
 \usepackage{listings}
 \usepackage{subcaption}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor,pifont}
+\usepackage{color} % for the command \textcolor
+\usepackage{soul} % for the command \hl
+\newboolean{showcomments}
+\setboolean{showcomments}{true}
+\ifthenelse{\boolean{showcomments}}
+{\newcommand{\nb}[2] {
+		\fcolorbox{black}{gray!20}{\bfseries\sffamily\scriptsize#1:}
+		{\sf\small$\blacktriangleright$\textit{#2}$\blacktriangleleft$}
+	}
+}
+{\newcommand{\nb}[2]{}
+}
+\newcommand\matteo[1]{\nb{Matteo}{\hl{#1}}}
 \lstset
 {
     language=Python,
