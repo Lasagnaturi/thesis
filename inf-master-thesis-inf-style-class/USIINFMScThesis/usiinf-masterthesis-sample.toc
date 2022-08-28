@@ -4,27 +4,23 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Reinforcement Learning}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}OpenAI Gym interface}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.2}OpenAI Gym interface}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Soft Actor Critic - SAC}{7}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Generative Adversarial Networks - GAN}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}CycleGAN}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.4}Generative Adversarial Networks - GAN}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}CycleGAN}{8}{section.2.5}%
 \contentsline {section}{\numberline {2.6}AutoEncoder and Variational AutoEncoder}{9}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}AutoEncoder}{9}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Variational AutoEncoder}{11}{subsection.2.6.2}%
-\contentsline {section}{\numberline {2.7}DonkeyCar}{12}{section.2.7}%
+\contentsline {subsection}{\numberline {2.6.2}Variational AutoEncoder}{10}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}DonkeyCar}{11}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Related works}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}State Representation Learning}{13}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Improving sample efficiency}{14}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Smooth exploration}{14}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Learning to Drive - L2D}{15}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Experimental setup}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The track and the environment}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}DonkeyCar}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Training modality}{18}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Simulation}{18}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Real world}{19}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Communication - MQTT}{19}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Dataset}{20}{section.4.5}%
+\contentsline {section}{\numberline {4.1}Track and Gym Environment}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Dataset}{18}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Training}{20}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Experiments}{23}{chapter.5}%
 \contentsline {section}{\numberline {5.1}AE vs VAE}{23}{section.5.1}%
 \contentsline {section}{\numberline {5.2}RL algorithm}{26}{section.5.2}%
@@ -32,8 +28,8 @@
 \contentsline {subsection}{\numberline {5.2.2}Training the simulated RL agent}{26}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Training the real RL agent}{28}{subsection.5.2.3}%
 \contentsline {section}{\numberline {5.3}Sim to Real}{29}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Future work and conclusion}{31}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Some retarded material}{33}{appendix.A}%
-\contentsline {section}{\numberline {A.1}It's over\dots }{33}{section.A.1}%
-\contentsline {chapter}{Glossary}{35}{appendix*.25}%
-\contentsline {chapter}{Bibliography}{37}{section*.27}%
+\contentsline {chapter}{\numberline {6}Future work and conclusion}{33}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Some retarded material}{35}{appendix.A}%
+\contentsline {section}{\numberline {A.1}It's over\dots }{35}{section.A.1}%
+\contentsline {chapter}{Glossary}{37}{appendix*.29}%
+\contentsline {chapter}{Bibliography}{39}{section*.31}%

@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -91,6 +91,20 @@ Danyang Liu and Gongshen Liu.
   (IJCNN)}, pages 1--7, 2019.
 \newblock \doi{10.1109/IJCNN.2019.8852155}.
 
+\bibitem[Mnih et~al.(2015)Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare,
+  Graves, Riedmiller, Fidjeland, Ostrovski, et~al.]{dqn}
+Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Andrei~A Rusu, Joel Veness,
+  Marc~G Bellemare, Alex Graves, Martin Riedmiller, Andreas~K Fidjeland, Georg
+  Ostrovski, et~al.
+\newblock Human-level control through deep reinforcement learning.
+\newblock \emph{nature}, 518\penalty0 (7540):\penalty0 529--533, 2015.
+
+\bibitem[Raffin(2020)]{learning-to-drive-in-5-minutes}
+Antonin Raffin.
+\newblock Learning to drive in 5 minutes.
+\newblock \url{https://github.com/araffin/learning-to-drive-in-5-minutes},
+  2020.
+
 \bibitem[Raffin et~al.(2022)Raffin, Kober, and Stulp]{pmlr-v164-raffin22a}
 Antonin Raffin, Jens Kober, and Freek Stulp.
 \newblock Smooth exploration for robotic reinforcement learning.
@@ -106,6 +120,13 @@ Patsorn Sangkloy, Jingwan Lu, Chen Fang, Fisher Yu, and James Hays.
 \newblock Scribbler: Controlling deep image synthesis with sketch and color,
   2016.
 \newblock URL \url{https://arxiv.org/abs/1612.00835}.
+
+\bibitem[Stocco et~al.(2022)Stocco, Pulfer, and Tonella]{stocco-mind}
+Andrea Stocco, Brian Pulfer, and Paolo Tonella.
+\newblock {Mind the Gap! A Study on the Transferability of Virtual vs
+  Physical-world Testing of Autonomous Driving Systems}.
+\newblock \emph{IEEE Transactions on Software Engineering}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2112.11255}.
 
 \bibitem[Sutton and Barto(2018)]{Sutton1998}
 Richard~S. Sutton and Andrew~G. Barto.

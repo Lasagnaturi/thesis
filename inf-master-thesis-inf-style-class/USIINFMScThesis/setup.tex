@@ -176,7 +176,6 @@ In particular, we used the MQ Telemetry Transport (MQTT) messaging protocol, whi
     \item \textbf{Replay buffer received:} (Client - Publisher, Donkey - Subscriber). The client uses this topic to acknowledge the Donkey that it has received the transitions collected during the just terminated episode. \matteo{perche' e' utile questo topic? Che cosa fa la Donkey una volta ricevuto questo messaggio?}
     \item \textbf{Parameters:} (Client - Publisher, Donkey - Subscriber). The client has a copy of the parameters of the policy used by the Donkey. Once the client receives the transitions the training starts. During training the human operator can retrieve the car and position it back on track. Once the training is complete, the client machine publishes the updated policy parameters and the Donkey updates its copy of the policy parameters;
     \item \textbf{Start episode:} (Client - Publisher, Donkey - Subscriber). The client uses this topic to acknowledge the Donkey that a new episode must start. Practically the human operator presses the enter key on the keyboard which triggers the signal;
-    \item \textbf{Speed modifier:} This topic can be used by the host machine to inform the DonkeyCar that it must change its throttle by the sent value that can be either positive or negative. \matteo{L'abbiamo usato questo comando alla fine?}
 \end{itemize}
 
 %\section{Communication - MQTT}
