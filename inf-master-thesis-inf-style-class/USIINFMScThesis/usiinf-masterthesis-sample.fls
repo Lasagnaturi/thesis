@@ -1656,6 +1656,10 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/md-ch
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/md-chr8y.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathdesign/mdbch/mdbchr7t.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/md-chr7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/mdbchr8t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/mdbchri8t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/mdbchr8t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/mdbchri8t.tfm
 INPUT ./valueiteration.pseudo
 INPUT valueiteration.pseudo
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/mdbchr8t.tfm
@@ -1765,7 +1769,6 @@ INPUT ./setup.tex
 INPUT setup.tex
 INPUT ./setup.tex
 INPUT setup.tex
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/mdbchr8t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/mdbchr8t.tfm
 INPUT ./images//setup/usi_track_real.png
 INPUT ./images//setup/usi_track_real.png
@@ -1881,7 +1884,6 @@ INPUT ./vae.txt
 INPUT vae.txt
 INPUT ./vae.txt
 INPUT vae.txt
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathdesign/mdbch/mdbchr8t.tfm
 INPUT ./images//experiments/len_mean.png
 INPUT ./images//experiments/len_mean.png
 INPUT images//experiments/len_mean.png

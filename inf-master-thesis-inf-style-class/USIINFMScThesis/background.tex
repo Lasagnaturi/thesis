@@ -4,7 +4,7 @@
 
 Reinforcement Learning (RL) is a branch of machine learning, alongside supervised learning and unsupervised learning, that defines a set of algorithms meant to learn how to act in a specific environment without the need of labeled data to learn from. 
 
-The algorithm defines the agent that learns a given task, for example, walking, driving and playing a game, by trial and error, while interacting with an environment which can be real or simulated. Whenever the agent makes a set of good actions it receives a positive reward, which makes such actions more likely in the future. State, action and reward are the most important concepts in RL. The state represents the current situation of the environment. If the agent is a humanoid robot and the task is walking, one possible state representation is the positions of its actuated joints. The action set or space in case of continouos domain, describes what the agent can do in a particular state. In the humanoid robot example above, the action space is a n-dimensional vector where each dimension represents the torque command to each of the n joint motors. Finally the reward is a measure of how good are the actions carried out by the agent. 
+The algorithm defines the agent that learns a given task, for example, walking, driving and playing a game, by trial and error, while interacting with an environment which can be real or simulated. Whenever the agent makes a set of good actions it receives a positive reward, which makes such actions more likely in the future. State, action and reward are the most important concepts in RL. The state represents the current situation of the environment. If the agent is a humanoid robot and the task is walking, one possible state representation is the positions of its actuated joints. The action set or space in case of continuous domain, describes what the agent can do in a particular state. In the humanoid robot example above, the action space is a n-dimensional vector where each dimension represents the torque command to each of the n joint motors. Finally the reward is a measure of how good are the actions carried out by the agent. 
 
 \begin{wrapfigure}{r}{0.6\textwidth}
   \begin{center}
@@ -14,13 +14,13 @@ The algorithm defines the agent that learns a given task, for example, walking, 
   \label{fig:rl}
 \end{wrapfigure}
 
-The reward function, usually human-designed, assigns a score to the action taken by the agent. Every action that leads to a \textit{good} state increases the score and viceversa. As described in Figure \ref{fig:rl} the agent interacts with the environment in discrete time steps. At time $t$ it gets the current state $s_{t}$ and the associated reward $r_{t}$ then the action $a_{t}$ is chosen from the set of available actions. After receiving the chosen action, the environment moves to a new state $s_{t+1}$ and the reward $r_{t+1}$ is given back to the agent. The total discounted reward (also known as return) to be maximized is:
+The reward function, usually human-designed, assigns a score to the action taken by the agent. Every action that leads to a \textit{good} state increases the score and vice-versa. As described in Figure \ref{fig:rl} the agent interacts with the environment in discrete time steps. At time $t$ it gets the current state $s_{t}$ and the associated reward $r_{t}$ then the action $a_{t}$ is chosen from the set of available actions. After receiving the chosen action, the environment moves to a new state $s_{t+1}$ and the reward $r_{t+1}$ is given back to the agent. The total discounted reward (also known as return) to be maximized is:
 
 \begin{equation}
   \label{eq:totalreward}
   R=\sum _{t=0}^{T}\gamma ^{t}r_{t}
 \end{equation}
-where $T$ is the time horizon (enventually $\infty$), $\gamma \in [0,1)$ is the discount factor which makes future rewards worth less than immediate rewards. The reward function is fundamental to the agent in order to learn and optimize a policy function $\pi$:
+where $T$ is the time horizon (eventually $\infty$), $\gamma \in [0,1)$ is the discount factor which makes future rewards worth less than immediate rewards. The reward function is fundamental to the agent in order to learn and optimize a policy function $\pi$:
 \begin{align}
   \displaystyle \pi &:A\times S\rightarrow [0,1] &  \displaystyle \pi (a,s)&=\Pr(a_{t}=a\mid s_{t}=s) \label{eq:label1}
 \end{align}
@@ -30,7 +30,7 @@ The final goal of the algorithm is to learn a policy that maximizes the expected
   \label{eq:rlobj}
   J(\pi)=\mathbb{E}_{\pi}[\sum _{t=0}^{T}\gamma ^{t}r(s_{t},a_{t})]
 \end{equation}
-The expection term is added because both the policy and the environments are usually stochastic.
+The expectation term is added because both the policy and the environments are usually stochastic.
 There are multiple ways to learn the optimal policy $\pi^{*}(s)$ assuming the \textit{State Transition probability matrix} $P$ that describes the probability of moving from one state to any successor state is known. The first one is called \textit{Value iteration}, which exploits the state value function $V^{\pi}(s)$ and the action value function $Q^{\pi}(s, a)$. The state value function $V$ is the expected return starting from the state s and following the policy $\pi$:
 
 \begin{equation}
@@ -43,7 +43,7 @@ while the action value function $Q$ is the expected return starting from the sta
   \label{eq:actionstatevalue}
   Q(s,a) = E_{\pi}[\sum_{t=0}^{T-1} \gamma^t r_t \mid s_t=s, a_t = a]
 \end{equation}
-There is an important reletionship between the two functions \ref{eq:statevalue} and \ref{eq:actionstatevalue}, in fact they can be written in terms of each other:
+There is an important relationship between the two functions \ref{eq:statevalue} and \ref{eq:actionstatevalue}, in fact they can be written in terms of each other:
 
 \begin{equation}
   \label{eq:statevaluefromQ}
@@ -54,9 +54,9 @@ There is an important reletionship between the two functions \ref{eq:statevalue}
   \label{eq:actionstatevaluefromV}
   Q(s,a) = \sum_{s'\in S} P(s' \mid s,a) [r(s,a,s') + \gamma V (s')].
 \end{equation}
-where $P$ is the state transition matrix that gives the probability of reaching the next state $s’$ given the state $s$ and action $a$ and $r$ is the reeard function that returns the reward value associated with transitioning to the next state $s'$ by taking the action $a$ in state $s$.
+where $P$ is the state transition matrix that gives the probability of reaching the next state $s\textit{'}$ given the state $s$ and action $a$ and $r$ is the reward function that returns the reward value associated with transitioning to the next state $s'$ by taking the action $a$ in state $s$.
 
-In \textit{Value Iteration}, the value function $V$ is randomly initialized and the algorithm, illustrasted in Listing \ref{lst:valueiteration}, repeatedly updates the values of $Q$ and $V$ for each state until convergence. When value iteration terminates the functions $Q$ and $V$ are guaranteed to optimal.
+In \textit{Value Iteration}, the value function $V$ is randomly initialized and the algorithm, illustrated in Listing \ref{lst:valueiteration}, repeatedly updates the values of $Q$ and $V$ for each state until convergence. When value iteration terminates the functions $Q$ and $V$ are guaranteed to optimal.
 
 \begin{center}
   \begin{minipage}{0.65\linewidth}
@@ -80,7 +80,7 @@ Policy iteration is also guaranteed to converge to the optimal policy and it oft
 
 A major problem arises when the \textit{the State Transition Matrix} of the environment is not known to the agent or the number of possible states is too big to be stored in tables, as for example when the state is an image and/or the action space is continuous. Deep RL algorithms use Deep Neural Networks in order to approximate $Q$ and $V$ instead of storing them in tables. Indeed, DNNs can represent states and actions in a compact way thanks to their ability to generalize to unseen data. 
 
-Besides the quantity that needs to be learnt, i.e. the value functions or the policy, RL algorithms are also categorized by the way such quantities are updated. On-Policy methods evaluate and improve the same policy which is being used to select actions. Off-Policy methods can optimize a certain quantity (usually an action value function Q) with data coming from any policy. Such methods are typically more efficient than on-policy methods, as they can reuse already collected experience multiple times.
+Besides the quantity that needs to be learnt, i.e. the value functions or the policy, RL algorithms are also categorized by the way such quantities are updated. On-Policy methods evaluate and improve the same policy which is being used to select actions. Off-Policy methods can optimize a certain quantity (usually an action value function $Q$) with data coming from any policy. Such methods are typically more efficient than on-policy methods, as they can reuse already collected experience multiple times. In order to reuse previously gathered data, off-policy methods randomly sample training data from the past experience stored in buffers, generally called replay buffer or experience, instead of using the latest experience. The replay buffer contains a collection of experience tuples ($s$, $a$, $r$, $s'$), where each term is respectively the state, the action taken, the reward and the new state reached taking action $a$, collected by the driving policy.
 
 \section{OpenAI Gym interface}
 
@@ -96,7 +96,7 @@ Gym is an open source library that defines a standard API to handle training and
 The environment is of primary importance to a RL algorithm since it defines the world of the agent in which the agent lives and operates. The standard interface designed by Gym, makes it easier to interact with environments, both made available by Gym and externally developed.
 The Gym interface is simple and capable of representing general RL problems. Cart-pole, shown in Figure \ref{fig:gym}, is a classic example of a Gym environment. A pole is attached by an un-actuated joint to a base, which moves along a straight track. The pendulum is placed upright on the base and the goal is to balance the pole by moving the base to the left and right. The action set include two actions, move right and move left. The observation space includes the base position, the base velocity, the pole angle and the pole angular velocity.
 The documentation provides a reference template shown in Listing \ref{lst:gym} that describes what are the fundamental methods a Gym environment should implement to work properly.
-Any exisisting environment built with Gym implements the following methods:
+Any existing environment built with Gym implements the following methods:
 
 \begin{center}
   \begin{minipage}{0.45\linewidth}
@@ -123,11 +123,11 @@ The given set of wrappers to reach any of the aforementioned goal includes: \tex
 \section{Soft Actor Critic - SAC}
 The soft actor critic algorithm \citep{art:sac} is a state-of-the-art RL algorithm designed to outperform prior on-policy and off-policy methods in a range of continuous control benchmark tasks. 
 
-It aims to both increase the sample efficiency and the robusteness of the policy at test time. A poor sample efficiency is typical of on-policy RL methods since thye require new sample to be collected for each gradient step. In order to improve the sample efficiency, SAC adopts an off-policy approach where the experience is stored in a replay buffer such that it can be reused multiple times during training. Moreover, SAC is based on the maximum entropy framework which maximizes both the expected return and the entropy of the policy. This objective is expressed in the following equation:
+It aims to both increase the sample efficiency and the robustness of the policy at test time. A poor sample efficiency is typical of on-policy RL methods since they require new sample to be collected for each gradient step. In order to improve the sample efficiency, SAC adopts an off-policy approach where the experience is stored in a replay buffer such that it can be reused multiple times during training. Moreover, SAC is based on the maximum entropy framework which maximizes both the expected return and the entropy of the policy. This objective is expressed in the following equation:
 \begin{equation}
   J(\pi)=\mathbb{E}_{\pi}[\sum _{t=0}^{T}\gamma ^{t}r(s_{t},a_{t})+\alpha H(\pi(\cdot \mid s_{t}))]
 \end{equation}
-where $\alpha$ is a temperature parameter that weighs the entropy term and thus controls the policy stochasticity, Maximizing both the expected reward and the entropy of the policy is beneficial to obtain policies that are robust w.r.t. unexpected situations at testing time. Moreover, training a stochastic policy encourages a wide exploration of the environment, promoting diverse behaviours of the agent.
+where $\alpha$ is a temperature parameter that weighs the entropy term and thus controls the policy stochasticity, Maximizing both the expected reward and the entropy of the policy is beneficial to obtain policies that are robust w.r.t. unexpected situations at testing time. Moreover, training a stochastic policy encourages a wide exploration of the environment, promoting diverse behaviors of the agent.
 
 \section{Generative Adversarial Networks - GAN}
 \begin{wrapfigure}{r}{0.6\textwidth}
@@ -148,14 +148,14 @@ where $z$ is the random noise vector, i.e. the latent vector, $D(G(z))$ is the p
 
 In particular, in order to learn the generator's distribution $p_{g}$ over the training dataset $X$ such that $p_{g}\approx p_{x}$, the authors define a distribution over latent vectors $p_{z}(z)$, which is mapped into the data space with the generator $G(z, \theta_{g})$. Moreover, the discriminator $D(x;\theta_{d})$, with $x \sim p_{g}$, outputs a single value which estimates the probability of $x$ coming from the distribution $p_{x}$ rather than $p_{g}$. $D$ and $G$ are both differentiable functions represented by a neural network with parameters $\theta_{d}$ and $\theta_{g}$ respectively.
 
-In other words, the discriminator and the generator play a minimax game with to optimize the function $V(G,D)$:
+In other words, the discriminator and the generator play a minimax game to optimize the function $V(G,D)$:
 \begin{equation}
   \label{eq:ganloss}
   min_G max_D V(G,D) = \mathbb{E}_{x\sim \rho_{data}(x)}[log D(x)] + \mathbb{E}_{z\sim \rho_{z}(z)}[log (1-D(G(z)))]
 \end{equation}
 
 \section{CycleGAN}
-Image-To-Image translation is a complex task where the goal is to transform an image from one domain to another and viceversa, as shown in Figure \ref{fig:translation}.
+Image-To-Image translation is a complex task where the goal is to transform an image from one domain to another and vice-versa, as shown in Figure \ref{fig:translation}.
 \begin{wrapfigure}{r}{0.5\textwidth}
   \begin{center}
     \includegraphics[width=0.5\textwidth]{background/imagetranslation.png}
@@ -166,8 +166,8 @@ Image-To-Image translation is a complex task where the goal is to transform an i
 Prior papers have been presented to translate images, however they often require paired training examples between the domains [\citet{https://doi.org/10.48550/arxiv.1612.00835}, \citet{karakan}].
 Such paired datasets can be very expensive or even impossible to gather, as in the case of object transfiguration ($horse \leftrightharpoons zebra$).
 
-Cycle-Consistent Adversarial Networks from \citet{CycleGAN2017} (CycleGAN), aims to solve this problem in an unsupervised fashion. The main goal is to learn, using an adversarial loss, a mapping $G:X\rightarrow Y$, where $X$ and $Y$ are two sets representing different domains, such that the image $G(x) $ with $x\in X$ is indistinguishable from an image $y\in Y$. Since the mapping is highly under-costrained, an inverse mapping $F:Y \rightarrow X$ is introduced, together with a cycle-consistency loss to enforce $F(G(x)) \approx x$ and viceversa.
-To accomplish the goal two discriminator $D_{X}$ and $D_{Y}$ are provided. $D_{X}$ tries to distinguish between examples coming from one domain (i.e. represented by the distribution $\rho_{x}$) and their translations $F(Y)$ and viceversa for $D_{Y}$. 
+Cycle-Consistent Adversarial Networks from \citet{CycleGAN2017} (CycleGAN), aims to solve this problem in an unsupervised fashion. The main goal is to learn, using an adversarial loss, a mapping $G:X\rightarrow Y$, where $X$ and $Y$ are two sets representing different domains, such that the image $G(x) $ with $x\in X$ is indistinguishable from an image $y\in Y$. Since the mapping is highly under-costrained, an inverse mapping $F:Y \rightarrow X$ is introduced, together with a cycle-consistency loss to enforce $F(G(x)) \approx x$ and vice-versa.
+To accomplish the goal two discriminator $D_{X}$ and $D_{Y}$ are provided. $D_{X}$ tries to distinguish between examples coming from one domain (i.e. represented by the distribution $\rho_{x}$) and their translations $F(Y)$ and vice-versa for $D_{Y}$. 
 The full objective \ref{eq:cycleganloss} includes the adversarial losses and the cycle-consistency loss to encourage a consistent translation from one domain to the other:
 \begin{equation}
   \label{eq:cycleganloss}
@@ -204,36 +204,12 @@ As shown in Figure \ref{fig:ae}, the main goal of the encoder is to learn a mapp
   \label{fig:ae}
 \end{figure}
 
-In other words, the encoder maps an image $x\in X$ into the latent space producing ${z=E_{\phi }(x)}$ with $z\in Z$; then $z$ is reconstructed by the decoder to bring it back to the orginal space ${x'=D_{\theta }(z)}$ with $x'\in X'$. Finally, $x'$ can be used as a label with any distance measure $d(x,x')$. Thus the loss to be minimized is computed as follow:
+In other words, the encoder maps an image $x\in X$ into the latent space producing ${z=E_{\phi }(x)}$ with $z\in Z$; then $z$ is reconstructed by the decoder to bring it back to the original space ${x'=D_{\theta }(z)}$ with $x'\in X'$. Finally, $x'$ can be used as a label with any distance measure $d(x,x')$. Thus the loss to be minimized is computed as follow:
 
 \begin{equation}
 \label{eq:aeloss}
   L(\theta ,\phi ) = d(x_{i},D_{\theta }(E_{\phi }(x_{i})))
 \end{equation}
-
-% \begin{figure}[h]
-%   \begin{minipage}{.5\textwidth}
-%     \centering
-%     \captionsetup{margin=0.8cm}
-%     \includegraphics[width=0.95\textwidth]{background/latentspace.png}
-%     \captionof{figure}{Example AE latent space $Z$ on MNIST datasetk}
-%     \label{fig:latent}
-%   \end{minipage}%
-%   \begin{minipage}{.5\textwidth}
-%       \centering
-%       \captionsetup{margin=0.8cm}
-%       \includegraphics[width=0.95\textwidth]{background/vaelatentspace.png}
-%       \captionof{figure}{Example VAE latent space $Z$ on MNIST dataset}
-%       \label{fig:vaelatent}
-%   \end{minipage}
-% \end{figure}
-
-% In Figure \ref{fig:latent} is shown a typical example of how the MNIST dataset looks like once mapped into the latent space. 
-
-% After the AE is trained, a random generated observation could be given to it to generate a new sample from the dataset distribution. However, there are parts of the latent space that does not correspond to any data point. Thus using sample from the \textit{white space} will not generate any meaningful image. That is why a basic so-designed AE cannot be used as a general generative model, eventhough a random sample that falls into any cluster in the latent space can certainly produce a meaningful image, also an image never seen in training even if only with small variations. 
-
-% AEs, results to be much more capable in data compression since the latent space of a linear autoencoder strongly resembles the eigenspace achieved during the principal component analysis of the data, with the added value of the non-linearity. Thus making AEs capable of learning rather powerful representations of the input data in lower dimensions with much less information loss.
-
 
 \subsection{Variational AutoEncoder}
 
@@ -249,7 +225,7 @@ Variational AutoEncoders (VAEs) addresses the problem of \textit{sparse localiza
 
 As shown in Figure \ref{fig:vae} only a small change with respect to AEs is introduced, i.e. the encoder instead of mapping samples directly into the latent space it encodes a single input as a distribution (usually a normal distribution) over the latent space. Then the concrete latent vector $z$ is produced by sampling such distribution. 
 
-Specifically, the encoder, starting from an image $x\in X$, produces the gaussian parameters ${[\mu_x, \sigma_x]=E_{\phi }(x)}$, then $z$ is sampled from a normal distribution $z \sim \mathcal{N}(\mu_x, \sigma_x)$. Consequently, the decoder brings it back to the orginal space ${x'=D_{\theta }(z)}$ with $x'\in X'$. Finally, $x'$ can be used as a label with any distance measure $d(x,x')$. Thus the loss to be minimized is computed as follow:
+Specifically, the encoder, starting from an image $x\in X$, produces the gaussian parameters ${[\mu_x, \sigma_x]=E_{\phi }(x)}$, then $z$ is sampled from a normal distribution $z \sim \mathcal{N}(\mu_x, \sigma_x)$. Consequently, the decoder brings it back to the original space ${x'=D_{\theta }(z)}$ with $x'\in X'$. Finally, $x'$ can be used as a label with any distance measure $d(x,x')$. Thus the loss to be minimized is computed as follow:
 \begin{equation}
 \label{eq:vaeloss}
   L(\theta ,\phi) = d(x_{i},D_{\theta }(E_{\phi }(x_{i}))) + KL[\mathcal{N} (\mu_x, \sigma_x),\mathcal{N}(0, 1)]
@@ -257,7 +233,7 @@ Specifically, the encoder, starting from an image $x\in X$, produces the gaussia
 where the first term is equivalent to the loss function in Equation \ref{eq:aeloss} and the KL term is the Kullback-Leibler divergence, which is a measure of how a probability distribution is different from another. The KL divergence acts as a regularization term by enforcing predicted distributions to be close to the normal distribution with mean 0 and standard deviation 1, giving to the latent space two main properties, i.e. continuity (close points in the latent space should be close also when decoded) and completeness (any point sampled from the latent space should always be meaningful once decoded). 
 
 \section{DonkeyCar} \label{sec:donkeycar}
-DonkeyCar, shown in Figure \ref{fig:donkey}, is an open source DIY platform providing software and hardware tools for the development of self-driving car algorithms. The basic car is a simple remote controlled elctric car that can be 3D printed or bought as a kit for an affordable price. The car can be customized with additional sensors as LIDARs and IMUs to provide more information about the surroundings of the car during driving.
+DonkeyCar, shown in Figure \ref{fig:donkey}, is an open source DIY platform providing software and hardware tools for the development of self-driving car algorithms. The basic car is a simple remote controlled electric car that can be 3D printed or bought as a kit for an affordable price. The car can be customized with additional sensors as LIDARs and IMUs to provide more information about the surroundings of the car during driving.
 
 \begin{wrapfigure}[19]{r}{0.5\textwidth}
   \begin{center}
@@ -267,5 +243,5 @@ DonkeyCar, shown in Figure \ref{fig:donkey}, is an open source DIY platform prov
   \label{fig:donkey}
 \end{wrapfigure}
 
-In particular, the car used for the purposes of this thesis, is a basic donkey car equipped with an 8-megapixel IMX219 sensor that features an 160 degree field of view. It is capable of capturing images with a resolution of 3280x2464 and video recording up to a resolution of 1080p at 30 frames per seconds. In order to process all the information coming from the camera, control the motors and run the self-driving car software the car is equipped with an NVIDIA Jetson Nano microcontroller. The power comes from a LiPO battery of 11.1V and 2200mAh that runs the electric motor and the microcontroller. Additionally, to expand the operational life of the car, a power-bank can be added to exclusively power the microcontroller, while the LiPO battery is dedicated at powering the engine. 
+In particular, the car used for the purposes of this thesis, is a basic donkey car equipped with an 8-megapixel IMX219 sensor that features an 160 degree field of view. It is capable of capturing images with a resolution of 3280x2464 and video recording up to a resolution of 1080p at 30 frames per seconds. In order to process all the information coming from the camera, control the motors and run the self-driving car software the car is equipped with an NVIDIA Jetson Nano micro-controller. The power comes from a LiPO battery of 11.1V and 2200mAh that runs the electric motor and the micro-controller. Additionally, to expand the operational life of the car, a power-bank can be added to exclusively power the micro-controller, while the LiPO battery is dedicated at powering the engine. 
 A DonkeyCar can be remotely controlled either with a joypad or directly by the software.
