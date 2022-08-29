@@ -1957,6 +1957,11 @@ INPUT ./images//experiments/aligned_latents2r.png
 INPUT images//experiments/aligned_latents2r.png
 INPUT ./images//experiments/aligned_latents2r.png
 INPUT ./images//experiments/aligned_latents2r.png
+INPUT ./images//experiments/path_rec.png
+INPUT ./images//experiments/path_rec.png
+INPUT images//experiments/path_rec.png
+INPUT ./images//experiments/path_rec.png
+INPUT ./images//experiments/path_rec.png
 INPUT ./images//experiments/badsimdist1.jpg
 INPUT ./images//experiments/badsimdist1.jpg
 INPUT images//experiments/badsimdist1.jpg

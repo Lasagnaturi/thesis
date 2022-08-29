@@ -25,8 +25,9 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Images embedded into the latent space with respectively the simulated and the real VAE.\relax }}{31}{figure.caption.24}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Example of using the CycleGan to create an aligned dateset\relax }}{31}{figure.caption.25}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Aligned images embedded into the latent space with respectively the simulated and the real VAE.\relax }}{32}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Figures \ref {fig:badsimdist1} and \ref {fig:goodsimdist1} show two pseudo simulated images and Figures \ref {fig:badsimdist2} and \ref {fig:goodsimdist2} respectively the closest match in the simulated set measured with the Euclidean Distance.\relax }}{32}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Figures \ref {fig:badrealdist1} and \ref {fig:goodrealdist1} show two pseudo real images and Figures \ref {fig:badrealdist2} and \ref {fig:goodrealdist2} respectively the closest match in the real set measured with the Euclidean Distance.\relax }}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Real agent's actions on an aligned dataset\relax }}{32}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Figures \ref {fig:badsimdist1} and \ref {fig:goodsimdist1} show two pseudo simulated images and Figures \ref {fig:badsimdist2} and \ref {fig:goodsimdist2} respectively the closest match in the simulated set measured with the Euclidean Distance.\relax }}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Figures \ref {fig:badrealdist1} and \ref {fig:goodrealdist1} show two pseudo real images and Figures \ref {fig:badrealdist2} and \ref {fig:goodrealdist2} respectively the closest match in the real set measured with the Euclidean Distance.\relax }}{33}{figure.caption.29}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
