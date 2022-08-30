@@ -1,8 +1,8 @@
-Initializea policy (*$\pi^{'}$*) arbitrarily
+Initializea policy (*$\pi'$*) arbitrarily
 Repeat
-    (*$\pi = \pi^{'}$*)
+    (*$\pi = \pi'$*)
     Compute the values using (*$\pi$*)
-        (*$ V_{\pi} = E[r \mid s, \pi(s)] + \gamma \sum_{s^{'}\in S} P(s^{'} \mid s, \pi(s)) V_{\pi}(s^{'}))  $*)
+        (*$ V_{\pi} = E[r \mid s, \pi(s)] + \gamma \sum_{s'\in S} P(s' \mid s, \pi(s)) V_{\pi}(s'))  $*)
     Improve the policy at each state
-        (*$ \pi^{'}(s) = arg max_a ( E[r \mid s, a] + \gamma \sum_{s^{'}\in S} P(s^{'} \mid s, a) V_{\pi}(s^{'})))$*)
-until (*$ \pi = \pi^{'} $*)
+        (*$ \pi'(s) = arg max_a ( E[r \mid s, a] + \gamma \sum_{s'\in S} P(s' \mid s, a) V_{\pi}(s')))$*)
+until (*$ \pi = \pi' $*)

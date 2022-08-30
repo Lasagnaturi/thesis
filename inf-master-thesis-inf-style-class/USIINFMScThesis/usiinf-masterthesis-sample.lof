@@ -3,30 +3,31 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Basic reinforcement learning\relax }}{3}{figure.2.1}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces DonkeyCar environment implemented with Gym\relax }}{6}{figure.2.2}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces GAN diagram\relax }}{8}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Image-to-image translation example \citep {CycleGAN2017}.\relax }}{9}{figure.2.4}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Image-to-image translation example\relax }}{9}{figure.2.4}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces AE diagram\relax }}{10}{figure.caption.9}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces VAE diagram\relax }}{11}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Assembled DonkeyCar\relax }}{11}{figure.2.7}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Assembled DonkeyCar\relax }}{11}{figure.caption.11}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Real USI track TODO\relax }}{17}{figure.caption.11}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Simulated USI track\relax }}{17}{figure.caption.11}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Images extracted from the simulated dataset\relax }}{19}{figure.caption.12}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Images extracted from the real dataset\relax }}{19}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Examples of cropped simulated images\relax }}{19}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Examples of cropped real images\relax }}{20}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Real USI track TODO\relax }}{17}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Simulated USI track\relax }}{17}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Images extracted from the simulated dataset\relax }}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Images extracted from the real dataset\relax }}{19}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Examples of cropped simulated images\relax }}{19}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Examples of cropped real images\relax }}{20}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Key steps in the real training procedures\relax }}{20}{figure.4.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces On the left an image from the real world as seen by the DonkeyCar camera, on the right the encoded and reconstructed image by the chosen VAE with a reconstruction loss of 112.\relax }}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces On the left an image from the simulator as seen by the DonkeyCar camera, on the right the encoded and reconstructed image by the chosen VAE with a reconstruction loss of 17\relax }}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Agents trained in simulation. Each agent has been trained with a different starting modality and has been trained for 100k steps.\relax }}{26}{figure.caption.18}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Spotted bug in the simulator\relax }}{27}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Agent trained in real world starting each lap at the starting line on the left and agent starting at the latest checkpoint on the right\relax }}{28}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces CycleGAN capabilities after training on our dataset\relax }}{30}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Images embedded into the latent space with respectively the simulated and the real VAE.\relax }}{31}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Example of using the CycleGan to create an aligned dateset\relax }}{31}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Aligned images embedded into the latent space with respectively the simulated and the real VAE.\relax }}{31}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Real agent's actions on an aligned dataset\relax }}{32}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Figures \ref {fig:badsimdist1} and \ref {fig:goodsimdist1} show two pseudo simulated images and Figures \ref {fig:badsimdist2} and \ref {fig:goodsimdist2} respectively the closest match in the simulated set measured with the Euclidean Distance.\relax }}{32}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Figures \ref {fig:badrealdist1} and \ref {fig:goodrealdist1} show two pseudo real images and Figures \ref {fig:badrealdist2} and \ref {fig:goodrealdist2} respectively the closest match in the real set measured with the Euclidean Distance.\relax }}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces On the left an image from the real world as seen by the DonkeyCar camera, on the right the encoded and reconstructed image by the chosen VAE with a reconstruction loss of 112.\relax }}{24}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces On the left an image from the simulator as seen by the DonkeyCar camera, on the right the encoded and reconstructed image by the chosen VAE with a reconstruction loss of 17\relax }}{24}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Agents trained in simulation. Each agent has been trained with a different starting modality and has been trained for 100k steps.\relax }}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Spotted bug in the simulator\relax }}{27}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Agent trained in real world starting each lap at the starting line on the left and agent starting at the latest checkpoint on the right\relax }}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces CycleGAN capabilities after training on our dataset\relax }}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Images embedded into the latent space with respectively the simulated and the real VAE.\relax }}{31}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Example of using the CycleGan to create an aligned dateset\relax }}{31}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Aligned images embedded into the latent space with respectively the simulated and the real VAE.\relax }}{31}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Real agent's actions on an aligned dataset\relax }}{32}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Figures \ref {fig:badsimdist1} and \ref {fig:goodsimdist1} show two pseudo simulated images and Figures \ref {fig:badsimdist2} and \ref {fig:goodsimdist2} respectively the closest match in the simulated set measured with the Euclidean Distance.\relax }}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Figures \ref {fig:badrealdist1} and \ref {fig:goodrealdist1} show two pseudo real images and Figures \ref {fig:badrealdist2} and \ref {fig:goodrealdist2} respectively the closest match in the real set measured with the Euclidean Distance.\relax }}{32}{figure.caption.29}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

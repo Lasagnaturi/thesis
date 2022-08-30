@@ -1,8 +1,8 @@
 \chapter{Future work and conclusion}
 
+In conclusion we successfully implemented a Representation Learning (ReL) techniques called Variational AutoEncoder by running several experiments in order to determine which would be the best on our datasets. It allowed us to streamline the reinforcement learning agent training by reducing the sample complexity and actually making it possible in such circumstances, since otherwise it would have been not possible as described by previous works. After defining the ReL technique, before moving to the actual RL training, a reward function that can work on both simulated and real environments was designed. Finally, by putting all the pieces together, both a real and a simulated RL agent were successfully trained by studying which would the best strategies to do it and demonstrating that agents initially trained in simulation can be replicated in very uncontrolled real environments even if with due care. Furthermore, initial studies, which need to be further investigated, to develop a Sim2Real procedure were made through the use of CycleGAN which is able to make a simulated agent see real images and vice-versa. 
 
-
-Another reward function was initally tested trying to improve the total time an agent takes to complete a lap:
+As a future work to consolidate the result, besides the further investigation pf the Sim2Real procedure, another reward function to improve the total time an agent takes to complete a lap is needed, a potential solution could be given by:
 \begin{equation}
   \label{eq:testreward}
   r_t = - 0.1 + throttle\_reward + cte\_penalty + \left\{\begin{matrix}
@@ -10,4 +10,6 @@ Another reward function was initally tested trying to improve the total time an 
     else & 0  
     \end{matrix}\right.
 \end{equation}
-The idea behind this function is that any step gives a negative reward and thus the agent must finish a lap in the smallest number of step to maximize the total episode reward. Minimizing the number steps means also finding the shortest way and consequently reducing the total time spent for a lap. Unfortunately, this approach did not let the agent learn to drive decently, at least in reasonable time.
+The idea behind this function is that any step gives a negative reward and thus the agent must finish a lap in the smallest number of step to maximize the total episode reward. Minimizing the number steps means also finding the shortest way and consequently reducing the total time spent for a lap. 
+
+Another idea is to equip the car with a few more sensor such as an accelerometer, which would further benefit the training and solve the battery problem of deteriorating performances over time by increasing the throttle when the speed goes down. Besides that, it could help the Donkey reach the cruising speed faster, and minimize the low speed starts at the beginning of each episode.

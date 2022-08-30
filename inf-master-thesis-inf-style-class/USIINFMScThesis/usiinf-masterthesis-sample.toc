@@ -1,6 +1,6 @@
-\contentsline {chapter}{Contents}{xi}{section*.3}%
-\contentsline {chapter}{List of Figures}{xiii}{section*.5}%
-\contentsline {chapter}{List of Tables}{xv}{section*.7}%
+\contentsline {chapter}{Contents}{ix}{section*.3}%
+\contentsline {chapter}{List of Figures}{xi}{section*.5}%
+\contentsline {chapter}{List of Tables}{xiii}{section*.7}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Reinforcement Learning}{3}{section.2.1}%
@@ -30,4 +30,4 @@
 \contentsline {section}{\numberline {5.3}Sim to Real}{29}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Future work and conclusion}{33}{chapter.6}%
 \contentsline {chapter}{\numberline {A}VAE/AE architecture}{35}{appendix.A}%
-\contentsline {chapter}{Bibliography}{37}{section*.30}%
+\contentsline {chapter}{Bibliography}{37}{section*.31}%
