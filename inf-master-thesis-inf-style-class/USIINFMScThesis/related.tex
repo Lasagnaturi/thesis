@@ -1,4 +1,4 @@
-\chapter{Related works}
+\chapter{Related Works}
 
 When training a Reinforcement Learning agent several problems arise, especially when the learning process moves from simulated environments to the real world. In this section, a few useful techniques for the purposes of this thesis, are presented.
 
@@ -8,7 +8,7 @@ Reinforcement Learning is a very general method for learning sequential decision
 
 In our work we use AEs/VAEs to decouple state representation learning from policy learning, in order to speed up the training process.
 
-\section{Improving sample efficiency} \label{sec:sampleefficiency}
+\section{Improving Sample Efficiency} \label{sec:sampleefficiency}
 % checked
 The observation space of the agent in our experiments is an image, as perceived by the camera of the DonkeyCar, both simulated and real. However, training a model from high-dimensional images with RL is ineffective as \citet{DBLP:journals/corr/abs-1910-01741} show. In their work the authors propose to use SRL to mitigate such issue. 
 
@@ -22,7 +22,7 @@ In the second training strategy, the setting is equivalent to the first one exce
 
 Furthermore, the results also show that updating the AE at the end of each episode and independently from the agent, results in the best performance in a wide range of tasks. On the other hand, using a pre-trained AE without updating it when training the agent shows a comparable performance and we use such a strategy to train the agent in our experiments. Indeed, updating the AE at the end of each episode would require an additional computation that would increase the training time when learning the policy in the real world.
 
-\section{Smooth exploration}
+\section{Smooth Exploration}
 % checked
 When moving an RL algorithm from a simulated environment to the real world, the unstructured step-based exploration, i.e. without taking into consideration the underlying hardware, often leads to unstable motion patterns that may result in poor exploration, longer training time, and even damage to the robot the agent is controlling. \citet{pmlr-v164-raffin22a} handles such issue by adding a state-dependent exploration (SDE) to current Deep Reinforcement Learning algorithms. 
 

@@ -1,4 +1,4 @@
-\chapter{Experimental setup}
+\chapter{Experimental Setup}
 
 %\begin{itemize}
 %	\item Track and Gym environment
@@ -14,7 +14,7 @@ In our real-world experiments, we used the DIYRobocars Standard Track taken from
 \begin{minipage}{.5\textwidth}
     \centering
     \includegraphics[width=0.85\textwidth]{setup/usi_track_real.png}
-    \captionof{figure}{Real USI track TODO}
+    \captionof{figure}{Real USI track TODO \matteo{Replace}}
     \label{fig:usitrack}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
@@ -117,8 +117,6 @@ In both environments we collected a dataset of $\approx$ 10\textit{k} images whi
 
 Before the pretraining phase of the encoder we applied a preprocessing phase of the images. In particular, we cropped the top 80 pixels from each image and resized it to $160 \times 80$. Cropping is useful to remove the part of the image that is not relevant to driving, while downscaling the image has the advantage of saving computation time when training the encoder. Figure~\ref{fig:datasetsimcropped} and Figure~\ref{fig:datasetrealcropped} show samples of cropped and resized images that are passed as input to the encoder during training. As we can see, resizing down to $160 \times 80$ does not degrade significantly the quality of the images. Moreover, the real images look like they have undergone more cropping than their simulated counterpart. The reason is that the position of the camera of the car is slightly different between simulation and real. Indeed, the \textit{simulated camera} is tilted upwards w.r.t. \textit{real camera} and this gives the impression that in the real images more pixels have been cropped.
 
-\matteo{Le immagini in figura 4.5 non sono le corrispondenti immagini croppate e resized di figura 4.3. Lo stesso vale per le immagini reali. Uniformerei queste cose.}
-
 %Since we want our RL agent to focus exclusively on the track we found convinient to crop the top 100 rows of each pictures to remove the background, and to reduce the complexity of our algorithm, we downscale each images from $320x140$ to $160x80$ before feeding them to the encoder. The resulting pictures are shown in Figures \ref{fig:datasetsimcropped} and \ref{fig:datasetrealcropped}. Note that during training, the training set is split in validation and training set with a ratio $20/80$ and the test set is collected apart and consist of $\sim 1000$ images for each dataset.
 
 \begin{figure}[h]
@@ -161,7 +159,7 @@ Finally such images collected in the simulator and in the real world are also us
 
 \section{Training}
 
-To train the RL agent we adopted the SAC algorithm due to its sample efficiency and the ability to reuse the collected experience~\cite{art:sac}. Such abilities are paramount when training an agent in the real world. We used the hyperparameters provided by \cite{learning-to-drive-in-5-minutes} for the task of driving. In particular, we chose a replay buffer of size $300$\textit{k} (i.e. the number of transitions that can be stored) and a multilayer perceptron with two layers of 64 units each both for the actor and the critic. Moreover, training is carried out at the end of each episode for 64 gradient steps. \matteo{Mi sembra che nel reale la policy sia piu' grande, forse sono 4 layer da 64 unita'. Giorgio check.} Thanks to the dimensionality reduction step, the transitions in the replay buffer contain latent vectors rather than entire images; as a consequence training is relatively fast and it can be carried out in machine without GPU. 
+To train the RL agent we adopted the SAC algorithm due to its sample efficiency and the ability to reuse the collected experience~\cite{art:sac}. Such abilities are paramount when training an agent in the real world. We used the hyperparameters provided by \cite{learning-to-drive-in-5-minutes} for the task of driving. In particular, we chose a replay buffer of size $300$\textit{k} (i.e. the number of transitions that can be stored) and a multilayer perceptron with two layers of 64 units each both for the actor and the critic. Moreover, training is carried out at the end of each episode for 64 gradient steps. Thanks to the dimensionality reduction step, the transitions in the replay buffer contain latent vectors rather than entire images; as a consequence training is relatively fast and it can be carried out in machine without GPU. 
 
 %\subsection{Simulation}\label{subsec:sim}
 In simulation, the training is performed using a client-server architecture where both client and server run on the same machine. The server, i.e. the Donkey simulator, provides the frames captured by the simulated camera at each timestep together with the \textit{telemetry} of the car, i.e. its position, velocity and XTE. The client, i.e. the learning component, receives the frames and the telemetry and it is tasked to make a control decision, i.e. it has to return to the server the action to undertake on the car. Once the server receives the action, the simulator applies it on the car and the cycle continues. The decision to start or stop an episode is delegated to the client, which according to the telemetry received by the simulator at each step, decides when to reset the environment. When an episode terminates, the training procedure starts. Afterwards the simulation is stopped for the entire duration of training and it is resumed as soon as the training finishes.

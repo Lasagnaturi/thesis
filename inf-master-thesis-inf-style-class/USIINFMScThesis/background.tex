@@ -10,7 +10,7 @@ The algorithm defines the agent that learns a given task, for example, walking, 
   \begin{center}
     \includegraphics[width=0.6\textwidth]{background/rl.png}
   \end{center}
-  \caption{Basic reinforcement learning}
+  \caption{Reinforcement Learning loop}
   \label{fig:rl}
 \end{wrapfigure}
 
@@ -82,7 +82,7 @@ A major problem arises when the \textit{the State Transition Matrix} of the envi
 
 Besides the quantity that needs to be learnt, i.e. the value functions or the policy, RL algorithms are also categorized by the way such quantities are updated. On-Policy methods evaluate and improve the same policy which is being used to select actions. Off-Policy methods can optimize a certain quantity (usually an action value function $Q$) with data coming from any policy. Such methods are typically more efficient than on-policy methods, as they can reuse already collected experience multiple times. In order to reuse previously gathered data, off-policy methods randomly sample training data from the past experience stored in buffers, generally called replay buffer. The replay buffer contains a collection of experience tuples ($s$, $a$, $r$, $s'$), where $s$ is the state, $a$ the action taken in state $s$, $r$ the corresponding scalar reward and $s'$ the new state reached by taking action $a$.
 
-\section{OpenAI Gym interface}
+\section{OpenAI Gym Interface}
 
 Gym is an open source library that defines a standard API to handle training and testing of RL agents, while providing a diverse collection of simulated environments. The environment is of primary importance to a RL algorithm since it defines the world the agent lives and operates in. 
 
