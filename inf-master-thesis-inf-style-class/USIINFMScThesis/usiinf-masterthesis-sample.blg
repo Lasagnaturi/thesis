@@ -5,45 +5,45 @@ A level-1 auxiliary file: introduction.aux
 The style file: plainnat.bst
 Database file #1: biblio.bib
 Warning--empty journal in karakan
-You've used 25 entries,
+You've used 27 entries,
             2773 wiz_defined-function locations,
-            766 strings with 11017 characters,
-and the built_in function-call counts, 14390 in all, are:
-= -- 1207
-> -- 1113
+            777 strings with 11521 characters,
+and the built_in function-call counts, 15333 in all, are:
+= -- 1285
+> -- 1191
 < -- 16
-+ -- 372
-- -- 347
-* -- 1240
-:= -- 2237
-add.period$ -- 95
-call.type$ -- 25
-change.case$ -- 186
-chr.to.int$ -- 25
-cite$ -- 51
-duplicate$ -- 579
-empty$ -- 1000
-format.name$ -- 380
-if$ -- 3013
++ -- 398
+- -- 371
+* -- 1323
+:= -- 2389
+add.period$ -- 102
+call.type$ -- 27
+change.case$ -- 200
+chr.to.int$ -- 27
+cite$ -- 55
+duplicate$ -- 615
+empty$ -- 1064
+format.name$ -- 406
+if$ -- 3205
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 23
-newline$ -- 151
-num.names$ -- 104
-pop$ -- 402
+missing$ -- 24
+newline$ -- 162
+num.names$ -- 112
+pop$ -- 430
 preamble$ -- 1
-purify$ -- 163
+purify$ -- 175
 quote$ -- 0
-skip$ -- 505
+skip$ -- 539
 stack$ -- 0
-substring$ -- 320
-swap$ -- 104
+substring$ -- 324
+swap$ -- 106
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 260
+type$ -- 282
 warning$ -- 1
-while$ -- 98
+while$ -- 104
 width$ -- 0
-write$ -- 361
+write$ -- 388
 (There was 1 warning)
