@@ -252,155 +252,380 @@ To summarize, we were able to train a RL agent in the real world in a reasonable
 %
 %Notice that the laying of the car at the latest checkpoint has been intentionally approximate on the area close to the checkpoints. This brought a main advantage, the agent learned quicker since it was able to see the area in front of it from many points of view and this, resulted useful when the car started to cross many checkpoints per episode since the direction from which the car arrived to a checkpoint could vary a lot, it had been trained to drive on many possible trajectories and was able to join the various sections well. Unfortunately, in the real world, more metrics to measure the quality of the driving and to make comparisons with the simulated agents are not available. 
 
-\section{Sim to Real}
+\section{Sim to Real and Real to Sim}
 
-In this section we present an unsuccessful attempt in driving our simulated DonkeyCar with the real agent trained above. SimToReal (S2R) and vice-versa aims in deploying model trained in one environment to the other. In our case, since the real world environment, in our setup, does not provide enough metrics to benchmark our real world agent, we aim to make it works also in simulation. For example, in order to test the generalization of the real agent would be much easier in simulation where multiple tracks or obstacles can be implemented at a low cost. Another advantage brought by this approach is that an agent trained in simulation, can be moved into the real world and this would result in less expensive training procedures and eventually more robust agents. The idea is to pre-train a CycleGan \citep{CycleGAN2017} for image transfiguration. In fact, the CycleGan is able to move an image into another domain keeping the original structure unaltered, but applying the style of the other domain as shown in Figure \ref{fig:cycleganexample}. Thus we leverage this property to transform images seen by the simulated camera of the DonkeyCar into what it would see in real world and vice-versa. Then, a real agent will eventually be able to drive on the simulator since it does see pseudo-real images. On the other hand, in order to drive a real car with a simulated agent, our DonkeyCar has not enough computational power, hence it could not run in time a CycleGan, that has millions of parameters, to make the real car see pseudo-simulated images and drive with the simulated agent. However, the problem can be circumvented by training an agent entirely on simulation but with pseudo-real images. After training CycleGAN with our datasets, it is able to transfigure image with high fidelity as shown in Figure \ref{fig:cycleganexample}. In fact, in human eyes they are barely distinguishable. However, even if the result looks good it could not be the case for the AutoEncoder that needs to place similar real and pseudo real images close into the latent space and similarly for similar simulated and pseudo simulated images.
+In this section we present an unsuccessful attempt at transferring the agent trained in the real world in simulation (real2sim, or r2s for short). This transfer would be useful in order to better evaluate the real world agent, given the constraints of the physical world. Indeed, in simulation it is possible to generate tracks with any shape and length to test the capabilities of the given agent. Likewise, transferring an agent trained in simulation into the real world (sim2real or s2r for short), would be useful to automate the training process, especially in the reset, and avoid unsafe behaviour of the agent.
+
+%Could not work also because we are only bridging the visual gap, while the physical gap is not addressed (see robot paper cited in testing-rl).
+
+%In this section we present an unsuccessful attempt in driving our simulated DonkeyCar with the real agent trained above. SimToReal (S2R) and vice-versa aims in deploying model trained in one environment to the other. In our case, since the real world environment, in our setup, does not provide enough metrics to benchmark our real world agent, we aim to make it works also in simulation. For example, in order to test the generalization of the real agent would be much easier in simulation where multiple tracks or obstacles can be implemented at a low cost. Another advantage brought by this approach is that an agent trained in simulation, can be moved into the real world and this would result in less expensive training procedures and eventually more robust agents. 
+
+We follow previous work~\cite{stocco-mind} that attempts to bridge the visual gap between simulation and real using image-to-image translation techniques. In particular, we train a CycleGAN~\cite{CycleGAN2017} to translate the images in one domain (real) into the other (simulated) and viceversa. In particular, we used the same hyperparameters of the original paper and trained the CycleGAN architecture for XX epochs \matteo{check}. During training we saved different checkpoints, we visually assessed the quality of the translations for some of them and picked the one with the best-looking translations. Figure~\ref{fig:cycleganexample} shows an example of translations generated by the CycleGAN generators (respectively, s2r generator in Figure~\ref{fig:cycleganexample}.a and r2s generator in Figure~\ref{fig:cycleganexample}.b). The images generated by the CycleGAN generator are called \textit{pseudo}-real or \textit{pseudo}-simulated, since they are translations from one domain into the other.
+
+%The idea is to pre-train a CycleGan \citep{CycleGAN2017} for image transfiguration. In fact, the CycleGan is able to move an image into another domain keeping the original structure unaltered, but applying the style of the other domain as shown in Figure \ref{fig:cycleganexample}. Thus we leverage this property to transform images seen by the simulated camera of the DonkeyCar into what it would see in real world and vice-versa. Then, a real agent will eventually be able to drive on the simulator since it does see pseudo-real images. On the other hand, in order to drive a real car with a simulated agent, our DonkeyCar has not enough computational power, hence it could not run in time a CycleGan, that has millions of parameters, to make the real car see pseudo-simulated images and drive with the simulated agent. However, the problem can be circumvented by training an agent entirely on simulation but with pseudo-real images. After training CycleGAN with our datasets, it is able to transfigure image with high fidelity as shown in Figure \ref{fig:cycleganexample}. In fact, in human eyes they are barely distinguishable. However, even if the result looks good it could not be the case for the AutoEncoder that needs to place similar real and pseudo real images close into the latent space and similarly for similar simulated and pseudo simulated images.
 
 \begin{figure}[h]
   \centering
   \begin{subfigure}{.6\linewidth}
       \centering
       \includegraphics[width=1\textwidth]{experiments/s2r.png}
-      \caption{From simulated images to pseudo-real}\label{fig:s2r}
+      \caption{From simulated images to pseudo-real.}\label{fig:s2r}
   \end{subfigure}
       \hfill
   \begin{subfigure}{.6\linewidth}
       \centering
       \includegraphics[width=1\textwidth]{experiments/r2s.png}
-      \caption{From real images to pseudo-simulated}\label{fig:r2s}
+      \caption{From real images to pseudo-simulated.}\label{fig:r2s}
   \end{subfigure}
-  \caption{CycleGAN capabilities after training on our dataset}
+  \caption{Translations generated by the trained CycleGAN.}
   \label{fig:cycleganexample}
 \end{figure}
-Hence, the real test set is transformed through the CycleGAN and then forwarded through the real VAE chosen and similarly for the simulated test set. Given that 64 dimension cannot be visualized, a further dimensionality reduction is applied with t-SNE down to two dimension, as shown in Figure \ref{fig:latentpseudo}.
+
+Once the CycleGAN architecture was trained, we used it to translate the two test sets of images we collected to evaluate the \textit{simulated VAE} and the \textit{real VAE}. The objective of this preliminary analysis is to understand how the \textit{pseudo} images generated by the CycleGAN are mapped by the chosen VAEs in the two domains w.r.t. the \textit{authentic} (i.e., real and simulated images captured by the camera of the car) images. Indeed, if we want to use the CycleGAN to transfer the trained agent from one domain into the other, we have to translate each image coming from the camera into a pseudo image of the other domain, which is mapped by the VAE into the latent space; only then, the corresponding latent space is processed by the trained policy.
+
+After translating the two test sets we computed the latent space for each image using the two VAEs and then applied the t-SNE dimensionality reduction technique~\cite{tsne} to visualize how the translations are mapped by the encoders w.r.t. the authentic images. The visualization is shown in Figure~\ref{fig:latentpseudo}.
+
 \begin{figure}[h]
   \centering
   \begin{subfigure}{.5\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{experiments/latentr2s.png}
-      \caption{Simulated and pseudo simulated images}\label{fig:latentr2s}
-  \end{subfigure}%
+	      \centering
+	      \includegraphics[width=1\textwidth]{experiments/latentr2s.png}
+	      \caption{Simulated (authentic) and pseudo-simulated images}\label{fig:latentr2s}
+	  \end{subfigure}%
       \hfill
   \begin{subfigure}{.5\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{experiments/latents2r.png}
-      \caption{Real and pseudo real images}\label{fig:latents2r}
-  \end{subfigure}
-  \caption{Images embedded into the latent space with respectively the simulated and the real VAE.}
+	      \centering
+	      \includegraphics[width=1\textwidth]{experiments/latents2r.png}
+	      \caption{Real (authentic) and pseudo-real images}\label{fig:latents2r}
+	  \end{subfigure}
+  \caption{Latent space visualization: authentic vs pseudo (i.e., translated) images. (Left) simulated VAE, (right) real VAE.}
   \label{fig:latentpseudo}
 \end{figure}
-Since the datasets are not aligned we do not except a perfect overlap, instead, the encoder should be able to at least embed similar images in the same region of the space. However, the latent space shows that is not always the case, some regions does overlap but not all off them in both real and simulated dataset. This could lead the trained agent not to respond consistently in similar situations. A further attempt is made by aligning the set of data used through the CycleGAN. Once the CycleGAN has been used to transform simulated images into pseudo real images, it can be used again to bring them back to pseudo simulated images, resulting in aligned sets. However, notice that the distortion, barely visible before, increases as shown in Figure \ref{fig:examplealigned}.
+
+Notice that the two test sets are not \textit{paired}. Indeed, both represent images of a lap taken by driving manually along the track in simulation and in the real world. However, despite the images should represent similar situations during driving, we can see that the embeddings do not consistently overlap, both in the r2s case (Figure~\ref{fig:latentpseudo}.a) and in the s2r case (Figure~\ref{fig:latentpseudo}.b). There are some regions, more prevalent in the s2r case, in which the embeddings produced by the VAE overlap for the pseudo and the authentic images, but there are others that are mapped in different regions. This could lead to the trained agent not to act consistently when presented with authentic and pseudo image, since the latent space that will be produced by the VAE will be necessarily different.
+
+In order to understand whether the non-overlap is due to the unpaired dataset, we decided to repeat the previous analysis by creating a paired dataset using the CycleGAN. Indeed, we can use the two generators of the CycleGAN to translate an image from one domain into the other (first step) and then back into the original domain (second step). An example of such \textit{double} translation for both domains is shown in Figure~\ref{fig:examplealigned}.
 
 \begin{figure}[h]
   \centering
   \begin{subfigure}{.33\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{experiments/0_.jpg}
-      \caption{Real image}\label{fig:real}
-  \end{subfigure}%
+	      \centering
+	      \includegraphics[width=1\textwidth]{experiments/0_.jpg}
+	      \caption{Real image}\label{fig:real}
+	  \end{subfigure}%
       \hfill
   \begin{subfigure}{.33\linewidth}
-      \centering
-      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/0__.jpg}}
-      \caption{Pseudo simulated image}\label{fig:psim}
-  \end{subfigure}%
+	      \centering
+	      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/0__.jpg}}
+	      \caption{Pseudo-simulated image}\label{fig:psim}
+	  \end{subfigure}%
   \hfill
   \begin{subfigure}{.33\linewidth}
-    \centering
-    \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/0___.jpg}}
-    \caption{Pseudo pseudo real}\label{fig:ppreal}
-  \end{subfigure} 
-  \caption{Example of using the CycleGan to create an aligned dateset}
+	    \centering
+	    \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/0___.jpg}}
+	    \caption{Pseudo-pseudo-real image}\label{fig:ppreal}
+	  \end{subfigure} 
+  \caption{Using the CycleGan to create a paired dateset}
   \label{fig:examplealigned}
 \end{figure}
 
+However, we can visually see that the quality of the translations degrades as more transformation steps are applied. Once obtained the paired dataset of authentic and pseudo images we computed the respective latent space vectors and used t-SNE to visualize them. The results are shown in Figure~\ref{fig:latentpseudoaligned}.
+
 \begin{figure}[h]
   \centering
   \begin{subfigure}{.5\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{experiments/aligned_latentr2s.png}
-      \caption{Aligned simulated and pseudo sim images}\label{fig:aligen_latentr2s}
-  \end{subfigure}%
+	      \centering
+	      \includegraphics[width=1\textwidth]{experiments/aligned_latentr2s.png}
+	      \caption{Paired Simulated (authentic) and pseudo-simulated images. \matteo{check labels}}\label{fig:aligen_latentr2s}
+	  \end{subfigure}%
       \hfill
   \begin{subfigure}{.5\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{experiments/aligned_latents2r.png}
-      \caption{Aligned real and pseudo real images}\label{fig:aligen_latents2r}
-  \end{subfigure}
-  \caption{Aligned images embedded into the latent space with respectively the simulated and the real VAE.}
+	      \centering
+	      \includegraphics[width=1\textwidth]{experiments/aligned_latents2r.png}
+	      \caption{Paired Real (authentic) and pseudo-real images.}\label{fig:aligen_latents2r}
+	  \end{subfigure}
+  \caption{Latent space visualization for the paired datasets: authentic vs pseudo (i.e., translated) images. (Left) simulated VAE, (right) real VAE.}
   \label{fig:latentpseudoaligned}
 \end{figure}
 
-Unfortunately, the results do not change enough from the previous one as shown in Figure \ref{fig:latentpseudoaligned}. Given that the t-SNEe dimensionality reduction may be a cause of our problem, a further investigation is made by checking what are the closest images between the real set and pseudo real set and similarly for the simulated set in the latent space. The distance measure used is the Euclidean distance and by looking at them there is some problem, in fact there are perfect matches as well as wrong matches as shown in Figures \ref{fig:simdistance} and \ref{fig:realdistance}. This may be the cause of our agent not being able to drive when transferred into another domain, the encoder is not robust enough to compensate little image distortion.
+However, the overlap of the embeddings does not seem to increase w.r.t. the unpaired datasets. We further proceeded with a more fine-grained analysis by looking at the single images in the datasets. In particular, considering the paired datasets, we randomly sampled pseudo images and computed their latent space representation. Then, we computed the Euclidean distance between such representation and all latent space representations in the authentic paired dataset and took the corresponding image whose latent space is the closest. Examples of such images are in Figure~\ref{fig:simdistance} for the simulated environment and in Figure~\ref{fig:realdistance}.
 
-As a final test, we are interested in studying what would be the actions undertaken by the agent on a set of aligned pictures. In particular, we selected a small set of 100 contiguous real pictures of the track and created its \textit{aligned} pseudo real version. We then checked what would be the action of the real agent. As shown in Figure \ref{fig:path_rec}, the results are interesting since most of the times the agent takes the same action on both images, however even a tiny difference can lead the car out of track from which often it is not able to recover. The mean error on the predicted action resulted to be 0.20 
-TODO INSERIRE STD E BREVE CONCLUSIONE DELLA SEZIONE 
+%Unfortunately, the results do not change enough from the previous one as shown in Figure \ref{fig:latentpseudoaligned}. Given that the t-SNEe dimensionality reduction may be a cause of our problem, a further investigation is made by checking what are the closest images between the real set and pseudo real set and similarly for the simulated set in the latent space. The distance measure used is the Euclidean distance and by looking at them there is some problem, in fact there are perfect matches as well as wrong matches as shown in Figures \ref{fig:simdistance} and \ref{fig:realdistance}. This may be the cause of our agent not being able to drive when transferred into another domain, the encoder is not robust enough to compensate little image distortion.
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{.24\linewidth}
+	      \centering
+	      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/badsimdist1.jpg}}
+	      \caption{Pseudo simulated (Bad)}\label{fig:badsimdist1}
+	  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.24\linewidth}
+	    \centering
+	    \includegraphics[width=1\textwidth]{experiments/badsimdist2.jpg}
+	    \caption{Closest simulated (Bad)}\label{fig:badsimdist2}
+	  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.24\linewidth}
+	      \centering
+	      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/goodsimdist1.jpg}}
+	      \caption{Pseudo simulated (Good)}\label{fig:goodsimdist1}
+	  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.24\linewidth}
+	    \centering
+	    \includegraphics[width=1\textwidth]{experiments/goodsimdist2.jpg}
+	    \caption{Closest simulated (Good)}\label{fig:goodsimdist2}
+	\end{subfigure}
+	  \caption{Figure~\ref{fig:badsimdist1} and Figure~\ref{fig:goodsimdist1} show two pseudo-simulated images. Respectively, Figure~\ref{fig:badsimdist2} and Figure~\ref{fig:goodsimdist2} are the closest match in the simulated set according to the Euclidean distance in the latent space of the simulated VAE.}
+	  \label{fig:simdistance}
+\end{figure}
+
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{.24\linewidth}
+	      \centering
+	      \includegraphics[width=1\textwidth]{experiments/badrealreal1.jpg}
+	      \caption{Pseudo real (Bad)}\label{fig:badrealdist1}
+	  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.24\linewidth}
+	    \centering
+	    \includegraphics[width=1\textwidth]{experiments/badrealreal2.jpg}
+	    \caption{Closest real (Bad)}\label{fig:badrealdist2}
+	  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.24\linewidth}
+	      \centering
+	      \includegraphics[width=1\textwidth]{experiments/goodrealdist1.jpg}
+	      \caption{Pseudo real (Good)}\label{fig:goodrealdist1}
+	  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.24\linewidth}
+	    \centering
+	    \includegraphics[width=1\textwidth]{experiments/goodrealdist2.jpg}
+	    \caption{Closest real (Good)}\label{fig:goodrealdist2}
+	\end{subfigure}
+	  \caption{Figure~\ref{fig:badrealdist1} and Figure~\ref{fig:goodrealdist1} show two pseudo-real images. Respectively, Figure~\ref{fig:badrealdist2} and Figure~\ref{fig:goodrealdist2}, show the closest match in the real set according to the Euclidean distance in the latent space of the real VAE.}
+	  \label{fig:realdistance}
+\end{figure}
+
+We can see from the images that in some cases the closest image in the latent space is actually similar to the authentic counterpart (see Good examples). On the other hand, there are also examples in critical parts of the track (see Figure~\ref{fig:badsimdist1} and Figure~\ref{fig:badrealdist1}), in which the closest authentic image in the latent space does not actually represent what is in the pseudo counterpart. As a consequence, transferring a trained agent from one domain into the other by using image-to-image translation seems challenging, as the VAE that represents the state for the trained policy does not seem to be robust w.r.t. the translations.
+
+Finally, we analyzed the offline predictions of the agent we trained in the real world and compute the error between the prediction made by the agent when given the authentic real image and the prediction made when given the pseudo-real image. Specifically, we selected a set of 100 contiguous images from the real dataset and computed the corresponding paired translation, i.e. from real to simulated and from simulated to real \matteo{images of which sector of the track? Moreover, 100 images correspond to 5 seconds of simulation}. Then, we computed the prediction, i.e. the steering angle, of the trained agent when given each of the two images and plotted the results in Figure~\ref{fig:path_rec}. From the plot we can see that, most of the time, the predictions are aligned. The average prediction error is 0.205 with a standard deviation of 0.183. However, small prediction errors can accumulate over time leading the car in sectors of the track where it is not able to recover.
+
+%As a final test, we are interested in studying what would be the actions undertaken by the agent on a set of aligned pictures. In particular, we selected a small set of 100 contiguous real pictures of the track and created its \textit{aligned} pseudo real version. We then checked what would be the action of the real agent. As shown in Figure \ref{fig:path_rec}, the results are interesting since most of the times the agent takes the same action on both images, however even a tiny difference can lead the car out of track from which often it is not able to recover. The mean error on the predicted action resulted to be 0.20 
+%TODO INSERIRE STD E BREVE CONCLUSIONE DELLA SEZIONE 
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=0.60\textwidth]{experiments/path_rec.png}
-  \end{center}
-  \caption{Real agent's actions on an aligned dataset}
+	    \includegraphics[width=0.60\textwidth]{experiments/path_rec.png}
+	  \end{center}
+  \caption{Trained agent predictions when given authentic real image and pseudo-real image.}
   \label{fig:path_rec}
 \end{figure}
 
-\begin{figure}[h]
-  \centering
-  \begin{subfigure}{.24\linewidth}
-      \centering
-      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/badsimdist1.jpg}}
-      \caption{Pseudo simulated}\label{fig:badsimdist1}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.24\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{experiments/badsimdist2.jpg}
-    \caption{Closest simulated}\label{fig:badsimdist2}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.24\linewidth}
-      \centering
-      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/goodsimdist1.jpg}}
-      \caption{Pseudo simulated}\label{fig:goodsimdist1}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.24\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{experiments/goodsimdist2.jpg}
-    \caption{Closest simulated}\label{fig:goodsimdist2}
-\end{subfigure}
-  \caption{Figures \ref{fig:badsimdist1} and \ref{fig:goodsimdist1} show two pseudo simulated images and Figures \ref{fig:badsimdist2} and \ref{fig:goodsimdist2} respectively the closest match in the simulated set measured with the Euclidean Distance.}
-  \label{fig:simdistance}
-\end{figure}
+%\begin{figure}[h]
+%  \begin{center}
+	%    \includegraphics[width=0.60\textwidth]{experiments/path_rec.png}
+	%  \end{center}
+%  \caption{Real agent's actions on an aligned dataset}
+%  \label{fig:path_rec}
+%\end{figure}
 
-\begin{figure}[h]
-  \centering
-  \begin{subfigure}{.24\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{experiments/badrealreal1.jpg}
-      \caption{Pseudo real}\label{fig:badrealdist1}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.24\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{experiments/badrealreal2.jpg}
-    \caption{Closest real}\label{fig:badrealdist2}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.24\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{experiments/goodrealdist1.jpg}
-      \caption{Pseudo real}\label{fig:goodrealdist1}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.24\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{experiments/goodrealdist2.jpg}
-    \caption{Closest real}\label{fig:goodrealdist2}
-\end{subfigure}
-  \caption{Figures \ref{fig:badrealdist1} and \ref{fig:goodrealdist1} show two pseudo real images and Figures \ref{fig:badrealdist2} and \ref{fig:goodrealdist2} respectively the closest match in the real set measured with the Euclidean Distance.}
-  \label{fig:realdistance}
-\end{figure}
+%\begin{figure}[h]
+%  \centering
+%  \begin{subfigure}{.24\linewidth}
+	%      \centering
+	%      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/badsimdist1.jpg}}
+	%      \caption{Pseudo simulated}\label{fig:badsimdist1}
+	%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+	%    \centering
+	%    \includegraphics[width=1\textwidth]{experiments/badsimdist2.jpg}
+	%    \caption{Closest simulated}\label{fig:badsimdist2}
+	%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+	%      \centering
+	%      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/goodsimdist1.jpg}}
+	%      \caption{Pseudo simulated}\label{fig:goodsimdist1}
+	%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+%    \centering
+%    \includegraphics[width=1\textwidth]{experiments/goodsimdist2.jpg}
+%    \caption{Closest simulated}\label{fig:goodsimdist2}
+%\end{subfigure}
+%  \caption{Figures \ref{fig:badsimdist1} and \ref{fig:goodsimdist1} show two pseudo simulated images and Figures \ref{fig:badsimdist2} and \ref{fig:goodsimdist2} respectively the closest match in the simulated set measured with the Euclidean Distance.}
+%  \label{fig:simdistance}
+%\end{figure}
+
+%\begin{figure}[h]
+%  \centering
+%  \begin{subfigure}{.24\linewidth}
+	%      \centering
+	%      \includegraphics[width=1\textwidth]{experiments/badrealreal1.jpg}
+	%      \caption{Pseudo real}\label{fig:badrealdist1}
+	%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+	%    \centering
+	%    \includegraphics[width=1\textwidth]{experiments/badrealreal2.jpg}
+	%    \caption{Closest real}\label{fig:badrealdist2}
+	%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+	%      \centering
+	%      \includegraphics[width=1\textwidth]{experiments/goodrealdist1.jpg}
+	%      \caption{Pseudo real}\label{fig:goodrealdist1}
+	%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+	%    \centering
+	%    \includegraphics[width=1\textwidth]{experiments/goodrealdist2.jpg}
+	%    \caption{Closest real}\label{fig:goodrealdist2}
+	%\end{subfigure}
+	%  \caption{Figures \ref{fig:badrealdist1} and \ref{fig:goodrealdist1} show two pseudo real images and Figures \ref{fig:badrealdist2} and \ref{fig:goodrealdist2} respectively the closest match in the real set measured with the Euclidean Distance.}
+	%  \label{fig:realdistance}
+	%\end{figure}
+
+
+%Unfortunately, the results do not change enough from the previous one as shown in Figure \ref{fig:latentpseudoaligned}. Given that the t-SNEe dimensionality reduction may be a cause of our problem, a further investigation is made by checking what are the closest images between the real set and pseudo real set and similarly for the simulated set in the latent space. The distance measure used is the Euclidean distance and by looking at them there is some problem, in fact there are perfect matches as well as wrong matches as shown in Figures \ref{fig:simdistance} and \ref{fig:realdistance}. This may be the cause of our agent not being able to drive when transferred into another domain, the encoder is not robust enough to compensate little image distortion.
+
+
+%Hence, the real test set is transformed through the CycleGAN and then forwarded through the real VAE chosen and similarly for the simulated test set. Given that 64 dimension cannot be visualized, a further dimensionality reduction is applied with t-SNE down to two dimension, as shown in Figure \ref{fig:latentpseudo}.
+%
+%\begin{figure}[h]
+%  \centering
+%  \begin{subfigure}{.5\linewidth}
+%      \centering
+%      \includegraphics[width=1\textwidth]{experiments/latentr2s.png}
+%      \caption{Simulated and pseudo simulated images}\label{fig:latentr2s}
+%  \end{subfigure}%
+%      \hfill
+%  \begin{subfigure}{.5\linewidth}
+%      \centering
+%      \includegraphics[width=1\textwidth]{experiments/latents2r.png}
+%      \caption{Real and pseudo real images}\label{fig:latents2r}
+%  \end{subfigure}
+%  \caption{Images embedded into the latent space with respectively the simulated and the real VAE.}
+%  \label{fig:latentpseudo}
+%\end{figure}
+%Since the datasets are not aligned we do not except a perfect overlap, instead, the encoder should be able to at least embed similar images in the same region of the space. However, the latent space shows that is not always the case, some regions does overlap but not all off them in both real and simulated dataset. This could lead the trained agent not to respond consistently in similar situations. A further attempt is made by aligning the set of data used through the CycleGAN. Once the CycleGAN has been used to transform simulated images into pseudo real images, it can be used again to bring them back to pseudo simulated images, resulting in aligned sets. However, notice that the distortion, barely visible before, increases as shown in Figure \ref{fig:examplealigned}.
+%
+%\begin{figure}[h]
+%  \centering
+%  \begin{subfigure}{.33\linewidth}
+%      \centering
+%      \includegraphics[width=1\textwidth]{experiments/0_.jpg}
+%      \caption{Real image}\label{fig:real}
+%  \end{subfigure}%
+%      \hfill
+%  \begin{subfigure}{.33\linewidth}
+%      \centering
+%      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/0__.jpg}}
+%      \caption{Pseudo simulated image}\label{fig:psim}
+%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.33\linewidth}
+%    \centering
+%    \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/0___.jpg}}
+%    \caption{Pseudo pseudo real}\label{fig:ppreal}
+%  \end{subfigure} 
+%  \caption{Example of using the CycleGan to create an aligned dateset}
+%  \label{fig:examplealigned}
+%\end{figure}
+%
+%\begin{figure}[h]
+%  \centering
+%  \begin{subfigure}{.5\linewidth}
+%      \centering
+%      \includegraphics[width=1\textwidth]{experiments/aligned_latentr2s.png}
+%      \caption{Aligned simulated and pseudo sim images}\label{fig:aligen_latentr2s}
+%  \end{subfigure}%
+%      \hfill
+%  \begin{subfigure}{.5\linewidth}
+%      \centering
+%      \includegraphics[width=1\textwidth]{experiments/aligned_latents2r.png}
+%      \caption{Aligned real and pseudo real images}\label{fig:aligen_latents2r}
+%  \end{subfigure}
+%  \caption{Aligned images embedded into the latent space with respectively the simulated and the real VAE.}
+%  \label{fig:latentpseudoaligned}
+%\end{figure}
+%
+%Unfortunately, the results do not change enough from the previous one as shown in Figure \ref{fig:latentpseudoaligned}. Given that the t-SNEe dimensionality reduction may be a cause of our problem, a further investigation is made by checking what are the closest images between the real set and pseudo real set and similarly for the simulated set in the latent space. The distance measure used is the Euclidean distance and by looking at them there is some problem, in fact there are perfect matches as well as wrong matches as shown in Figures \ref{fig:simdistance} and \ref{fig:realdistance}. This may be the cause of our agent not being able to drive when transferred into another domain, the encoder is not robust enough to compensate little image distortion.
+%
+%As a final test, we are interested in studying what would be the actions undertaken by the agent on a set of aligned pictures. In particular, we selected a small set of 100 contiguous real pictures of the track and created its \textit{aligned} pseudo real version. We then checked what would be the action of the real agent. As shown in Figure \ref{fig:path_rec}, the results are interesting since most of the times the agent takes the same action on both images, however even a tiny difference can lead the car out of track from which often it is not able to recover. The mean error on the predicted action resulted to be 0.20 
+%TODO INSERIRE STD E BREVE CONCLUSIONE DELLA SEZIONE 
+%
+%\begin{figure}[h]
+%  \begin{center}
+%    \includegraphics[width=0.60\textwidth]{experiments/path_rec.png}
+%  \end{center}
+%  \caption{Real agent's actions on an aligned dataset}
+%  \label{fig:path_rec}
+%\end{figure}
+%
+%\begin{figure}[h]
+%  \centering
+%  \begin{subfigure}{.24\linewidth}
+%      \centering
+%      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/badsimdist1.jpg}}
+%      \caption{Pseudo simulated}\label{fig:badsimdist1}
+%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+%    \centering
+%    \includegraphics[width=1\textwidth]{experiments/badsimdist2.jpg}
+%    \caption{Closest simulated}\label{fig:badsimdist2}
+%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+%      \centering
+%      \scalebox{-1}[1]{\includegraphics[width=1\textwidth]{experiments/goodsimdist1.jpg}}
+%      \caption{Pseudo simulated}\label{fig:goodsimdist1}
+%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+%    \centering
+%    \includegraphics[width=1\textwidth]{experiments/goodsimdist2.jpg}
+%    \caption{Closest simulated}\label{fig:goodsimdist2}
+%\end{subfigure}
+%  \caption{Figures \ref{fig:badsimdist1} and \ref{fig:goodsimdist1} show two pseudo simulated images and Figures \ref{fig:badsimdist2} and \ref{fig:goodsimdist2} respectively the closest match in the simulated set measured with the Euclidean Distance.}
+%  \label{fig:simdistance}
+%\end{figure}
+%
+%\begin{figure}[h]
+%  \centering
+%  \begin{subfigure}{.24\linewidth}
+%      \centering
+%      \includegraphics[width=1\textwidth]{experiments/badrealreal1.jpg}
+%      \caption{Pseudo real}\label{fig:badrealdist1}
+%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+%    \centering
+%    \includegraphics[width=1\textwidth]{experiments/badrealreal2.jpg}
+%    \caption{Closest real}\label{fig:badrealdist2}
+%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+%      \centering
+%      \includegraphics[width=1\textwidth]{experiments/goodrealdist1.jpg}
+%      \caption{Pseudo real}\label{fig:goodrealdist1}
+%  \end{subfigure}%
+%  \hfill
+%  \begin{subfigure}{.24\linewidth}
+%    \centering
+%    \includegraphics[width=1\textwidth]{experiments/goodrealdist2.jpg}
+%    \caption{Closest real}\label{fig:goodrealdist2}
+%\end{subfigure}
+%  \caption{Figures \ref{fig:badrealdist1} and \ref{fig:goodrealdist1} show two pseudo real images and Figures \ref{fig:badrealdist2} and \ref{fig:goodrealdist2} respectively the closest match in the real set measured with the Euclidean Distance.}
+%  \label{fig:realdistance}
+%\end{figure}
 
 
 
