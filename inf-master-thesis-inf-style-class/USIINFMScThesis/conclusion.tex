@@ -1,13 +1,22 @@
-\chapter{Future work and conclusion}
+\chapter{Conclusion and Future Work}
 
+In conclusion, we successfully trained a reinforcement learning (RL) agent to drive a physical car along a non-trivial physical track in our lab. Such objective was achieved by decoupling the state representation learning and the policy learning. In particular, we trained a Variational AutoEncoder (VAE) to learn how to map the images captured by the camera into a low-dimensional vector space in order to speed up training of the Soft Actor Critic (SAC) agent. We first trained the agent in simulation, by testing different reset strategies, with a reward function designed to work both in simulation and in the real environment. Then, we trained two agents in the real world using as many reset strategies and found an effective way to train a RL agent in a reasonable amount of time. Finally, a preliminary investigation was carried out regarding a sim2real technique to transfer the agent trained in the real world in simulation.
 
+As future work we plan to investigate the sim2real direction further by, for example, using the encoder of the CycleGAN to train the RL policy. Indeed, the encoder would act as the encoder of the VAE we used but with the advantage of having such component already trained as a byproduct of the CycleGAN training. Moreover, such encoder will be trained to produce a latent space that represents the features useful to reconstruct a simulated image from a real image and viceversa, which may be beneficial for transferring the policy from one domain to the other.
 
-Another reward function was initally tested trying to improve the total time an agent takes to complete a lap:
-\begin{equation}
-  \label{eq:testreward}
-  r_t = - 0.1 + throttle\_reward + cte\_penalty + \left\{\begin{matrix}
-    if done & crash\_error \\ 
-    else & 0  
-    \end{matrix}\right.
-\end{equation}
-The idea behind this function is that any step gives a negative reward and thus the agent must finish a lap in the smallest number of step to maximize the total episode reward. Minimizing the number steps means also finding the shortest way and consequently reducing the total time spent for a lap. Unfortunately, this approach did not let the agent learn to drive decently, at least in reasonable time.
+Furthermore, we want to equip the real DonkeyCar with additional sensors, such as accelerometer, in order to estimate the speed and design a reward function that can provide more guidance to the RL agent and further reduce the training time. 
+
+%In conclusion we successfully implemented a Representation Learning (ReL) techniques called Variational AutoEncoder by running several experiments in order to determine which would be the best on our datasets. It allowed us to streamline the reinforcement learning agent training by reducing the sample complexity and actually making it possible in such circumstances, since otherwise it would have been not possible as described by previous works. After defining the ReL technique, before moving to the actual RL training, a reward function that can work on both simulated and real environments was designed. Finally, by putting all the pieces together, both a real and a simulated RL agent were successfully trained by studying which would the best strategies to do it and demonstrating that agents initially trained in simulation can be replicated in very uncontrolled real environments even if with due care. Furthermore, initial studies, which need to be further investigated, to develop a Sim2Real procedure were made through the use of CycleGAN which is able to make a simulated agent see real images and vice-versa.
+%
+%As a future work to consolidate the result, besides the further investigation pf the Sim2Real procedure, another reward function to improve the total time an agent takes to complete a lap is needed, a potential solution could be given by:
+%
+%\begin{equation}
+%	\label{eq:testreward}
+%	r_t = - 0.1 + throttle\_reward + cte\_penalty + \left\{\begin{matrix}
+%		if done & crash\_error \\ 
+%		else & 0  
+%	\end{matrix}\right.
+%\end{equation}
+%
+%The idea behind this function is that any step gives a negative reward and thus the agent must finish a lap in the smallest number of step to maximize the total episode reward. Minimizing the number steps means also finding the shortest way and consequently reducing the total time spent for a lap.
+%Another idea is to equip the car with a few more sensor such as an accelerometer, which would further benefit the training and solve the battery problem of deteriorating performances over time by increasing the throttle when the speed goes down. Besides that, it could help the Donkey reach the cruising speed faster, and minimize the low speed starts at the beginning of each episode.
