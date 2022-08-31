@@ -10,19 +10,19 @@
 In our real-world experiments, we used the DIYRobocars Standard Track taken from the Robocar Store\footnote{https://www.robocarstore.com} and shown in Figure~\ref{fig:usitrack}. The track measured is about 11 meters long, i.e. $\approx$60\% bigger than the track used by~\citet{DBLP:journals/corr/abs-2008-00715}. 
 
 \begin{figure}[h]
-    \centering
-\begin{minipage}{.5\textwidth}
-    \centering
-    \includegraphics[width=0.85\textwidth]{setup/usi_track_real.png}
-    \captionof{figure}{Real USI track TODO \matteo{Replace}}
-    \label{fig:usitrack}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-    \centering
-    \includegraphics[width=0.95\textwidth]{setup/usi_track.png}
-    \captionof{figure}{Simulated USI track}
-    \label{fig:usitracksim}
-\end{minipage}
+	\centering
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=.98\textwidth]{setup/usi_track_real.png}
+		\captionof{figure}{Real track}
+		\label{fig:usitrack}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=.94\textwidth]{setup/usi_track.png}
+		\captionof{figure}{Simulated track}
+		\label{fig:usitracksim}
+	\end{minipage}
 \end{figure}
 
 For our experiments in the simulated environment, we used the virtual replica of such track, which was created in Unity~\footnote{https://www.unity.com} by a previous thesis in the lab. Additionally, we added a starting line in the simulated track in order to record the number of times the car completes a lap. Such information is important to understand the progress of the RL agent during training. Both tracks are single-lane since the DonkeyCar occupies 50\% of the track when it is placed in the middle of the yellow dashed line. However, the track is an interesting testbed for RL and self-driving in general since it has a mixture of sectors that are easy to drive and curves that are challenging to take.
@@ -164,7 +164,17 @@ To train the RL agent we adopted the SAC algorithm due to its sample efficiency 
 %\subsection{Simulation}\label{subsec:sim}
 In simulation, the training is performed using a client-server architecture where both client and server run on the same machine. The server, i.e. the Donkey simulator, provides the frames captured by the simulated camera at each timestep together with the \textit{telemetry} of the car, i.e. its position, velocity and XTE. The client, i.e. the learning component, receives the frames and the telemetry and it is tasked to make a control decision, i.e. it has to return to the server the action to undertake on the car. Once the server receives the action, the simulator applies it on the car and the cycle continues. The decision to start or stop an episode is delegated to the client, which according to the telemetry received by the simulator at each step, decides when to reset the environment. When an episode terminates, the training procedure starts. Afterwards the simulation is stopped for the entire duration of training and it is resumed as soon as the training finishes.
 
-Also In the real environment we used a client-server architecture for training. However, client and server run on different machines. This is because the Donkey microcontroller has limited computation capabilities and, most importantly, a limited battery. Indeed, carrying out the RL agent training on the Donkey would quickly deplete the battery and slow down training due to frequent battery recharge and replacement. Moreover, having two dedicated machines also allows a human operator to remotely stop an episode, appropriately reset the car to its initial position and remotely restart it.
+%\begin{wrapfigure}{r}{0.6\textwidth}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.60\textwidth]{setup/comm.png}
+	\end{center}
+	\caption{Key steps in the real training procedures}
+	\label{fig:comunication}
+\end{figure}
+%\end{wrapfigure}
+
+Also In the real environment we used a client-server architecture for training. However, client and server run on different machines, as shown in Figure~\ref{fig:comunication}. This is because the Donkey microcontroller has limited computation capabilities and, most importantly, a limited battery. Indeed, carrying out the RL agent training on the Donkey would quickly deplete the battery and slow down training due to frequent battery recharge and replacement. Moreover, having two dedicated machines also allows a human operator to remotely stop an episode, appropriately reset the car to its initial position and remotely restart it.
 
 In particular, we used the MQ Telemetry Transport (MQTT) messaging protocol, which is one of the most used in the internet of things domain. The protocol defines all the rules that determine how devices exchange messages over the internet, i.b. by writing (publish) and reading (subscribe) data. The sender (publisher) and the receiver (subscriber) communicate on message channels called \textit{topics} and are decoupled from each other. The protocol also involves the presence of a \textit{broker} that has access to the incoming messages and distributes them correctly to the subscribers of a certain topic. Specifically, we used the \textit{HiveMQ} broker which allows the connection of up to 100 clients free of charge. The topics defined to manage the communication between the DonkeyCar and the client machine are as follows:
 

@@ -169,7 +169,7 @@ Image-To-Image translation is a complex task where the goal is to transform an i
   \begin{center}
     \includegraphics[width=0.5\textwidth]{background/imagetranslation.png}
   \end{center}
-  \caption{Image-to-image translation example \citep{CycleGAN2017}. \matteo{Replace figure with Donkey sim2real}}
+  \caption{Image-to-image translation example.}
   \label{fig:translation}
 \end{wrapfigure}
 
@@ -252,13 +252,13 @@ where the first term is equivalent to the loss function in Equation \ref{eq:aelo
 
 DonkeyCar, shown in Figure \ref{fig:donkey}, is an open source DIY platform providing software and hardware tools for the development of self-driving car algorithms. The basic car is a simple remote-controlled electric car that can be 3D printed or bought as a kit for an affordable price. The car can be customized with additional sensors as LIDARs and IMUs to provide more information about the surroundings of the car during driving.
 
-\begin{wrapfigure}[19]{r}{0.5\textwidth}
-  \begin{center}
-    \includegraphics[width=0.5\textwidth]{background/donkey.jpeg}
-  \end{center}
-  \caption{Assembled DonkeyCar}
-  \label{fig:donkey}
-\end{wrapfigure}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.30\textwidth]{background/donkey.jpeg}
+	\end{center}
+	\caption{Assembled DonkeyCar}
+	\label{fig:donkey}
+\end{figure}
 
 In particular, the car used for the purposes of this thesis, is a basic DonkeyCar equipped with an 8-megapixel IMX219 sensor that features an 160 degree field of view. It is capable of capturing images with a resolution of 3280x2464 and video recording up to a resolution of 1080p at 30 frames per seconds. In order to process all the information coming from the camera, control the motors and run the self-driving car software, the car is equipped with an NVIDIA Jetson Nano micro-controller. The power comes from a LiPO battery of 11.1V and 2200mAh that runs the electric motor and the micro-controller. Additionally, to expand the operational life of the car, a power-bank can be added to exclusively power the micro-controller, while the LiPO battery is dedicated at powering the engine. 
 A DonkeyCar can be remotely controlled either with a joystick or directly by the software.
