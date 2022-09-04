@@ -41,7 +41,7 @@ sensitive=false,
 morecomment=[l]{//s},
 }
 
-\title{Training a Reinforcement Learning Agent in the Real World} %compulsory
+\title{Training a Real World Reinforcement Learning Agent} %compulsory
 \specialization{Major in Artificial intelligence}%optional
 \subtitle{A case study using the DonkeyCar autonomous driving framework} %optional 
 \author{Giorgio Macauda} %compulsory
@@ -54,8 +54,8 @@ morecomment=[l]{//s},
 \Year{2022} %compulsory, put only the year
 \place{Lugano} %compulsory
 
-\dedication{To my beloved} %optional
-\openepigraph{Someone said \dots}{Someone} %optional
+% \dedication{To my beloved} %optional
+% \openepigraph{Someone said \dots}{Someone} %optional
 
 %\makeindex %optional, also comment out \theindex at the end
 
@@ -66,10 +66,25 @@ morecomment=[l]{//s},
 \frontmatter %generates the frontmatter, this is FIXED
 
 \begin{abstract}
-TODO
+\vspace{\fill} 
+Reinforcement learning (RL) allows robots to learn skills from interactions with an environment that can be real or simulated, where the problem can be modelled as a sequential decision-making task. In practice, recent advances in RL involve the use of a simulator, where training can be accelerated by parallelizing data collection and safety is not an issue. On the other hand, the field advances at a much slower rate when it comes to the real world. Indeed, the applicability of RL in the real world is held back by data efficiency to reduce training time, limited availability of sensors and safety of both the robot and the surrounding environment.
+
+In this thesis, we evaluate the best strategies to train an RL agent in the real world to control a small scale electric car using only a camera sensor. In particular, we assessed different \textit{representation learning} techniques and \textit{environment reset} strategies, first in a faithful simulated environment and then in the real world.
+
+Finally, we also experimented with \textit{sim2real} (simulation to real) techniques to evaluate whether an RL agent trained in one domain (i.e., simulation) can be transferred into the other (i.e., real).
+\vspace{\fill} 
 \end{abstract}
+
 \begin{acknowledgements}
-TODO
+\vspace{\fill} 
+The writing of this thesis was made possible by Prof. Paolo Tonella, and co-supervisor, Dr. Matteo Biagiola from the Software Institute. I want to thank them for giving me the opportunity to work with them in the subject of my interest and for their immense availability and kindness that has always helped me, event in difficult moments when their advice was fundamental for the success of this project, from the very first to the very last day. 
+
+For having achieved my academic goals I have to thank also all my classmates as I consider them indispensable for my academic career, with them I shared laughter, critical moments and knowledge, we supported each other in all phases of our Master, and without them this wouldn't have been such a great journey.
+
+I also thank my parents Salvatore and Giovanna and my sisters Jessica and Giada, who from outside the university have  contributed in their own way to my life in all these years of study, making it normal and concretely possible.
+
+Last, but definitely not least, I want to thanks the newcomers in my life. My girlfriend Lara who has been supportive since the very first day we met without hesitation and my newly born nephew Amanda. They both have brightened my days contributing to the success of my studies.
+\vspace{\fill} 
 \end{acknowledgements}
 
 

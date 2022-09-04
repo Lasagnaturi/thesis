@@ -1,33 +1,33 @@
-\contentsline {chapter}{Contents}{xi}{section*.3}%
-\contentsline {chapter}{List of Figures}{xiii}{section*.5}%
-\contentsline {chapter}{List of Tables}{xv}{section*.7}%
+\contentsline {chapter}{Contents}{vii}{section*.3}%
+\contentsline {chapter}{List of Figures}{ix}{section*.5}%
+\contentsline {chapter}{List of Tables}{xi}{section*.7}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Reinforcement Learning}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}OpenAI Gym interface}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.2}OpenAI Gym Interface}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Soft Actor Critic - SAC}{7}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Generative Adversarial Networks - GAN}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}CycleGAN}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.5}CycleGAN}{8}{section.2.5}%
 \contentsline {section}{\numberline {2.6}AutoEncoder and Variational AutoEncoder}{9}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}AutoEncoder}{9}{subsection.2.6.1}%
 \contentsline {subsection}{\numberline {2.6.2}Variational AutoEncoder}{10}{subsection.2.6.2}%
 \contentsline {section}{\numberline {2.7}DonkeyCar}{11}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Related works}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Related Works}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}State Representation Learning}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Improving sample efficiency}{14}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Smooth exploration}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Improving Sample Efficiency}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Smooth Exploration}{14}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Learning to Drive - L2D}{15}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Experimental setup}{17}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Experimental Setup}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Track and Gym Environment}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Dataset}{18}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Training}{20}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Experiments}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1}AE vs VAE}{23}{section.5.1}%
-\contentsline {section}{\numberline {5.2}RL algorithm}{24}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Reward function}{24}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Training the simulated RL agent}{26}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Training the real RL agent}{28}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Sim to Real}{29}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Future work and conclusion}{33}{chapter.6}%
-\contentsline {chapter}{\numberline {A}VAE/AE architecture}{35}{appendix.A}%
-\contentsline {chapter}{Bibliography}{37}{section*.30}%
+\contentsline {section}{\numberline {5.1}Representation Learning: AE vs VAE}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}RL Algorithm}{25}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Reward Function}{25}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Training the RL Agent in Simulation}{26}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Training the RL Agent in The Real World}{28}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Sim to Real and Real to Sim}{30}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{35}{chapter.6}%
+\contentsline {chapter}{\numberline {A}VAE/AE architecture}{37}{appendix.A}%
+\contentsline {chapter}{Bibliography}{39}{section*.32}%

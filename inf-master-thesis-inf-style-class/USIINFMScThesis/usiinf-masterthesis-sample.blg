@@ -5,45 +5,45 @@ A level-1 auxiliary file: introduction.aux
 The style file: plainnat.bst
 Database file #1: biblio.bib
 Warning--empty journal in karakan
-You've used 27 entries,
+You've used 34 entries,
             2773 wiz_defined-function locations,
-            777 strings with 11521 characters,
-and the built_in function-call counts, 15333 in all, are:
-= -- 1285
-> -- 1191
-< -- 16
-+ -- 398
-- -- 371
-* -- 1323
-:= -- 2389
-add.period$ -- 102
-call.type$ -- 27
-change.case$ -- 200
-chr.to.int$ -- 27
-cite$ -- 55
-duplicate$ -- 615
-empty$ -- 1064
-format.name$ -- 406
-if$ -- 3205
+            812 strings with 13146 characters,
+and the built_in function-call counts, 19806 in all, are:
+= -- 1644
+> -- 1623
+< -- 18
++ -- 543
+- -- 509
+* -- 1731
+:= -- 3117
+add.period$ -- 124
+call.type$ -- 34
+change.case$ -- 264
+chr.to.int$ -- 34
+cite$ -- 69
+duplicate$ -- 770
+empty$ -- 1316
+format.name$ -- 553
+if$ -- 4107
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 24
-newline$ -- 162
-num.names$ -- 112
-pop$ -- 430
+missing$ -- 31
+newline$ -- 197
+num.names$ -- 140
+pop$ -- 555
 preamble$ -- 1
-purify$ -- 175
+purify$ -- 232
 quote$ -- 0
-skip$ -- 539
+skip$ -- 687
 stack$ -- 0
-substring$ -- 324
-swap$ -- 106
-text.length$ -- 9
+substring$ -- 403
+swap$ -- 125
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 282
+type$ -- 359
 warning$ -- 1
-while$ -- 104
+while$ -- 130
 width$ -- 0
-write$ -- 388
+write$ -- 477
 (There was 1 warning)

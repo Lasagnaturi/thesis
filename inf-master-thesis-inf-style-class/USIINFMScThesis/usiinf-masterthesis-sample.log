@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.24)  30 AUG 2022 03:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.24)  4 SEP 2022 11:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1197,78 +1197,41 @@ LaTeX Font Warning: Font shape `T1/uop/m/n' undefined
 
 
 ]
-LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 13.82408pt on input line 66.
- [3] [4
-
-]
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 66.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 66.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 66.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 8.64006pt on input line 66.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.76004pt on input line 66.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 66.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 66.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 66.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 66.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 66.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 66.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 66.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 66.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 66.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 66.
- [5] [6
-
-]
 \c@oldpage=\count390
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 23.88496pt on input line 69.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 23.88496pt on input line 69.
- [7
+ [3
 
-] [8] [9
+] [4
 
-] [10] (./usiinf-masterthesis-sample.toc
+] [5] [6
+
+] (./usiinf-masterthesis-sample.toc
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 9.60007pt on input line 1.
- [11
-
+ [7
 
 ])
 \tf@toc=\write6
 \openout6 = `usiinf-masterthesis-sample.toc'.
 
- [12] (./usiinf-masterthesis-sample.lof)
+ [8] (./usiinf-masterthesis-sample.lof [9
+
+
+])
 \tf@lof=\write7
 \openout7 = `usiinf-masterthesis-sample.lof'.
 
- [13
-
-
-] [14] (./usiinf-masterthesis-sample.lot)
+ [10] (./usiinf-masterthesis-sample.lot)
 \tf@lot=\write8
 \openout8 = `usiinf-masterthesis-sample.lot'.
 
- [15
+ [11
 
 
-] [16
+] [12
 
 ]
 \openout2 = `introduction.aux'.
@@ -1279,20 +1242,47 @@ LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 19.91054pt on input line 1.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 19.91054pt on input line 1.
-
-Underfull \vbox (badness 4378) has occurred while \output is active []
-
- [1
+[1
 
 
-])
-Overfull \hbox (3.52551pt too wide) in paragraph at lines 7--83
-[]\T1/mdbch/m/n/10 Finally, a few un-suc-cess-ful ex-per-i-ments which need to be ex-plored more are run in a Sim2Real
- []
-
-[2] (./background.tex
+]
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 6.72005pt on input line 15.
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 15.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 15.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 15.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 7.68005pt on input line 15.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 5.76004pt on input line 15.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 15.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 15.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 15.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 15.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 15.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 15.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 15.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 15.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 15.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 15.
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 15.
+) [2] (./background.tex
 Chapter 2.
-<images//background/rl.png, id=405, 1303.0281pt x 597.6729pt>
+<images//background/rl.png, id=415, 1303.0281pt x 597.6729pt>
 File: images//background/rl.png Graphic file (type png)
 <use images//background/rl.png>
 Package pdftex.def Info: images//background/rl.png  used on input line 11.
@@ -1302,7 +1292,10 @@ Underfull \hbox (badness 1983) in paragraph at lines 17--18
 [][]\T1/mdbch/m/n/10 The re-ward func-tion, usu-ally
  []
 
-[3
+
+Underfull \vbox (badness 2012) has occurred while \output is active []
+
+ [3
 
 
 
@@ -1312,31 +1305,13 @@ Overfull \hbox (0.37762pt too wide) in paragraph at lines 32--35
  []
 
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 57.
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 4.80003pt on input line 57.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 63.
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 63.
 (./valueiteration.pseudo
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 7.68005pt on input line 3.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 5.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 7.68005pt on input line 5.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 5.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 5.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 5.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 5.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 5.
 ) [4] (./policyiteration.pseudo) [5]
-<images//background/env.png, id=466, 822.07124pt x 520.94624pt>
+<images//background/env.png, id=477, 822.07124pt x 520.94624pt>
 File: images//background/env.png Graphic file (type png)
 <use images//background/env.png>
 Package pdftex.def Info: images//background/env.png  used on input line 91.
@@ -1358,53 +1333,48 @@ Overfull \hbox (0.30229pt too wide) in paragraph at lines 112--113
 []\T1/mdbch/b/n/10 render: \T1/mdbch/m/n/10 this method ren-ders the en-vi-ron-ment when a pa-ram-e-ter \T1/mdbch/m/it/10 mode='human' \T1/mdbch/m/n/10 is passed. 
  []
 
-[7]
-<images//background/gan.png, id=498, 1503.6978pt x 597.6729pt>
+<images//background/gan.png, id=500, 1503.6978pt x 597.6729pt>
 File: images//background/gan.png Graphic file (type png)
 <use images//background/gan.png>
-Package pdftex.def Info: images//background/gan.png  used on input line 136.
+Package pdftex.def Info: images//background/gan.png  used on input line 141.
 (pdftex.def)             Requested size: 236.61682pt x 94.04277pt.
-<images//background/imagetranslation.png, id=511, 561.09625pt x 521.95pt>
+[7]
+<images//background/imagetranslation.png, id=520, 588.7596pt x 551.9019pt>
 File: images//background/imagetranslation.png Graphic file (type png)
 <use images//background/imagetranslation.png>
-Package pdftex.def Info: images//background/imagetranslation.png  used on input line 162.
-(pdftex.def)             Requested size: 197.17868pt x 183.41794pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--166
-\T1/mdbch/m/n/10 do-main to an-other and vice-versa, as shown in Fig-ure []2.4[].
- []
-
-[8 <./images//background/gan.png (PNG copy)>]
-Underfull \hbox (badness 2573) in paragraph at lines 166--169
-\T1/mdbch/m/n/10 late im-ages, how-ever they of-ten re-quire
- []
-
-
-Underfull \hbox (badness 5893) in paragraph at lines 170--173
+Package pdftex.def Info: images//background/imagetranslation.png  used on input line 167.
+(pdftex.def)             Requested size: 197.17868pt x 184.83144pt.
+ [8 <./images//background/gan.png (PNG copy)>]
+Underfull \hbox (badness 5893) in paragraph at lines 176--179
 []\T1/mdbch/m/n/10 Cycle-Consistent Ad-ver-sar-ial Net-works
  []
 
-[9 <./images//background/imagetranslation.png>]
-<images//background/ae.png, id=558, 1224.7356pt x 597.6729pt>
+[9 <./images//background/imagetranslation.png (PNG copy)>]
+<images//background/ae.png, id=569, 1224.7356pt x 597.6729pt>
 File: images//background/ae.png Graphic file (type png)
 <use images//background/ae.png>
-Package pdftex.def Info: images//background/ae.png  used on input line 202.
+Package pdftex.def Info: images//background/ae.png  used on input line 212.
 (pdftex.def)             Requested size: 276.04895pt x 134.7077pt.
-<images//background/vae.png, id=559, 1503.6978pt x 597.6729pt>
+<images//background/vae.png, id=570, 1503.6978pt x 597.6729pt>
 File: images//background/vae.png Graphic file (type png)
 <use images//background/vae.png>
-Package pdftex.def Info: images//background/vae.png  used on input line 221.
+Package pdftex.def Info: images//background/vae.png  used on input line 231.
 (pdftex.def)             Requested size: 315.48709pt x 125.39645pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Overfull \hbox (22.61826pt too wide) in paragraph at lines 239--240
+[]\T1/mdbch/m/n/10 Specifically, the en-coder, start-ing from an im-age $\OML/mdbch/m/it/10 x \OMS/mdbch/m/n/10 2 \OML/mdbch/m/it/10 X$\T1/mdbch/m/n/10 , pro-duces the pa-ram-e-ters $[]$
+ []
+
 [10 <./images//background/ae.png (PNG copy)>]
-<images//background/donkey.jpeg, id=574, 901.3675pt x 803.0pt>
+<images//background/donkey.jpeg, id=580, 901.3675pt x 803.0pt>
 File: images//background/donkey.jpeg Graphic file (type jpg)
 <use images//background/donkey.jpeg>
-Package pdftex.def Info: images//background/donkey.jpeg  used on input line 241.
-(pdftex.def)             Requested size: 197.17868pt x 175.65582pt.
+Package pdftex.def Info: images//background/donkey.jpeg  used on input line 254.
+(pdftex.def)             Requested size: 118.30841pt x 105.38614pt.
 ) (./related.tex [11 <./images//background/vae.png (PNG copy)> <./images//background/donkey.jpeg>] [12]
 Chapter 3.
 [13
@@ -1413,30 +1383,28 @@ Chapter 3.
 
 ]
 Chapter 4.
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 10.
-<images//setup/usi_track_real.png, id=634, 4181.6225pt x 2926.935pt>
+<images//setup/usi_track_real.png, id=633, 546.843pt x 327.8649pt>
 File: images//setup/usi_track_real.png Graphic file (type png)
 <use images//setup/usi_track_real.png>
 Package pdftex.def Info: images//setup/usi_track_real.png  used on input line 16.
-(pdftex.def)             Requested size: 167.60307pt x 117.28076pt.
-<images//setup/usi_track.png, id=635, 636.12656pt x 397.485pt>
+(pdftex.def)             Requested size: 193.23425pt x 115.85504pt.
+<images//setup/usi_track.png, id=634, 636.12656pt x 397.485pt>
 File: images//setup/usi_track.png Graphic file (type png)
 <use images//setup/usi_track.png>
 Package pdftex.def Info: images//setup/usi_track.png  used on input line 22.
-(pdftex.def)             Requested size: 187.31914pt x 117.04477pt.
-[17 <./images//setup/usi_track_real.png> <./images//setup/usi_track.png>]
-<images//setup/s1.jpg, id=655, 321.2pt x 240.9pt>
+(pdftex.def)             Requested size: 185.34843pt x 115.81355pt.
+[17 <./images//setup/usi_track_real.png (PNG copy)> <./images//setup/usi_track.png>]
+<images//setup/s1.jpg, id=654, 321.2pt x 240.9pt>
 File: images//setup/s1.jpg Graphic file (type jpg)
 <use images//setup/s1.jpg>
 Package pdftex.def Info: images//setup/s1.jpg  used on input line 83.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/s2.jpg, id=656, 321.2pt x 240.9pt>
+<images//setup/s2.jpg, id=655, 321.2pt x 240.9pt>
 File: images//setup/s2.jpg Graphic file (type jpg)
 <use images//setup/s2.jpg>
 Package pdftex.def Info: images//setup/s2.jpg  used on input line 87.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/s3.jpg, id=657, 321.2pt x 240.9pt>
+<images//setup/s3.jpg, id=656, 321.2pt x 240.9pt>
 File: images//setup/s3.jpg Graphic file (type jpg)
 <use images//setup/s3.jpg>
 Package pdftex.def Info: images//setup/s3.jpg  used on input line 91.
@@ -1445,17 +1413,17 @@ Package pdftex.def Info: images//setup/s3.jpg  used on input line 91.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images//setup/r1.jpg, id=658, 321.2pt x 240.9pt>
+<images//setup/r1.jpg, id=657, 321.2pt x 240.9pt>
 File: images//setup/r1.jpg Graphic file (type jpg)
 <use images//setup/r1.jpg>
 Package pdftex.def Info: images//setup/r1.jpg  used on input line 100.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/r2.jpg, id=659, 321.2pt x 240.9pt>
+<images//setup/r2.jpg, id=658, 321.2pt x 240.9pt>
 File: images//setup/r2.jpg Graphic file (type jpg)
 <use images//setup/r2.jpg>
 Package pdftex.def Info: images//setup/r2.jpg  used on input line 104.
 (pdftex.def)             Requested size: 123.6313pt x 92.72289pt.
-<images//setup/r3.jpg, id=660, 321.2pt x 240.9pt>
+<images//setup/r3.jpg, id=659, 321.2pt x 240.9pt>
 File: images//setup/r3.jpg Graphic file (type jpg)
 <use images//setup/r3.jpg>
 Package pdftex.def Info: images//setup/r3.jpg  used on input line 108.
@@ -1464,266 +1432,310 @@ Package pdftex.def Info: images//setup/r3.jpg  used on input line 108.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18]
-
-LaTeX Font Warning: Font shape `T1/uop/m/it' undefined
-(Font)              using `T1/uop/m/n' instead on input line 120.
-
-<images//setup/cs1.jpg, id=669, 160.6pt x 80.3pt>
+<images//setup/cs1.jpg, id=668, 160.6pt x 80.3pt>
 File: images//setup/cs1.jpg Graphic file (type jpg)
 <use images//setup/cs1.jpg>
-Package pdftex.def Info: images//setup/cs1.jpg  used on input line 127.
+Package pdftex.def Info: images//setup/cs1.jpg  used on input line 125.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
-<images//setup/cs2.jpg, id=670, 160.6pt x 80.3pt>
+<images//setup/cs2.jpg, id=669, 160.6pt x 80.3pt>
 File: images//setup/cs2.jpg Graphic file (type jpg)
 <use images//setup/cs2.jpg>
-Package pdftex.def Info: images//setup/cs2.jpg  used on input line 131.
+Package pdftex.def Info: images//setup/cs2.jpg  used on input line 129.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
-<images//setup/cs3.jpg, id=671, 160.6pt x 80.3pt>
+<images//setup/cs3.jpg, id=670, 160.6pt x 80.3pt>
 File: images//setup/cs3.jpg Graphic file (type jpg)
 <use images//setup/cs3.jpg>
-Package pdftex.def Info: images//setup/cs3.jpg  used on input line 135.
+Package pdftex.def Info: images//setup/cs3.jpg  used on input line 133.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
-<images//setup/cr1.jpg, id=672, 160.6pt x 80.3pt>
+<images//setup/cr1.jpg, id=671, 160.6pt x 80.3pt>
 File: images//setup/cr1.jpg Graphic file (type jpg)
 <use images//setup/cr1.jpg>
-Package pdftex.def Info: images//setup/cr1.jpg  used on input line 144.
+Package pdftex.def Info: images//setup/cr1.jpg  used on input line 142.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
-<images//setup/cr2.jpg, id=673, 160.6pt x 80.3pt>
+<images//setup/cr2.jpg, id=672, 160.6pt x 80.3pt>
 File: images//setup/cr2.jpg Graphic file (type jpg)
 <use images//setup/cr2.jpg>
-Package pdftex.def Info: images//setup/cr2.jpg  used on input line 148.
+Package pdftex.def Info: images//setup/cr2.jpg  used on input line 146.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
-<images//setup/cr3.jpg, id=674, 160.6pt x 80.3pt>
+<images//setup/cr3.jpg, id=673, 160.6pt x 80.3pt>
 File: images//setup/cr3.jpg Graphic file (type jpg)
 <use images//setup/cr3.jpg>
-Package pdftex.def Info: images//setup/cr3.jpg  used on input line 152.
+Package pdftex.def Info: images//setup/cr3.jpg  used on input line 150.
 (pdftex.def)             Requested size: 123.6313pt x 61.81769pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <./images//setup/s1.jpg> <./images//setup/s2.jpg> <./images//setup/s3.jpg> <./images//setup/r1.jpg> <./images//setup/r2.jpg> <./images//setup/r3.jpg> <./images//setup/cs1.jpg> <./images//setup/cs2.jpg> <./images//setup/cs3.jpg>] [20 <./images//setup/cr1.jpg> <./images//setup/cr2.jpg> <./images//setup/cr3.jpg>]) (./experiments.tex [21] [22
+[19 <./images//setup/s1.jpg> <./images//setup/s2.jpg> <./images//setup/s3.jpg> <./images//setup/r1.jpg> <./images//setup/r2.jpg> <./images//setup/r3.jpg> <./images//setup/cs1.jpg> <./images//setup/cs2.jpg> <./images//setup/cs3.jpg>]
+<images//setup/comm.png, id=687, 826.5279pt x 559.3698pt>
+File: images//setup/comm.png Graphic file (type png)
+<use images//setup/comm.png>
+Package pdftex.def Info: images//setup/comm.png  used on input line 170.
+(pdftex.def)             Requested size: 236.61682pt x 160.13046pt.
+ [20 <./images//setup/cr1.jpg> <./images//setup/cr2.jpg> <./images//setup/cr3.jpg> <./images//setup/comm.png (PNG copy)>]) (./experiments.tex [21] [22
 
 ]
 Chapter 5.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [23]
-<images//experiments/11296.jpg, id=712, 321.2pt x 240.9pt>
+<images//experiments/11296.jpg, id=718, 321.2pt x 240.9pt>
 File: images//experiments/11296.jpg Graphic file (type jpg)
 <use images//experiments/11296.jpg>
-Package pdftex.def Info: images//experiments/11296.jpg  used on input line 26.
+Package pdftex.def Info: images//experiments/11296.jpg  used on input line 69.
 (pdftex.def)             Requested size: 131.4527pt x 98.58934pt.
-<images//experiments/11296.png, id=713, 160.6pt x 80.3pt>
+<images//experiments/11296.png, id=719, 160.6pt x 80.3pt>
 File: images//experiments/11296.png Graphic file (type png)
 <use images//experiments/11296.png>
-Package pdftex.def Info: images//experiments/11296.png  used on input line 30.
+Package pdftex.def Info: images//experiments/11296.png  used on input line 73.
 (pdftex.def)             Requested size: 118.30841pt x 59.15517pt.
-<images//experiments/1160.jpg, id=714, 321.2pt x 240.9pt>
+
+
+LaTeX Font Warning: Font shape `T1/uop/m/it' undefined
+(Font)              using `T1/uop/m/n' instead on input line 75.
+
+<images//experiments/1160.jpg, id=720, 321.2pt x 240.9pt>
 File: images//experiments/1160.jpg Graphic file (type jpg)
 <use images//experiments/1160.jpg>
-Package pdftex.def Info: images//experiments/1160.jpg  used on input line 38.
+Package pdftex.def Info: images//experiments/1160.jpg  used on input line 81.
 (pdftex.def)             Requested size: 131.4527pt x 98.58934pt.
-<images//experiments/1160.png, id=715, 160.6pt x 80.3pt>
+<images//experiments/1160.png, id=721, 160.6pt x 80.3pt>
 File: images//experiments/1160.png Graphic file (type png)
 <use images//experiments/1160.png>
-Package pdftex.def Info: images//experiments/1160.png  used on input line 42.
+Package pdftex.def Info: images//experiments/1160.png  used on input line 85.
 (pdftex.def)             Requested size: 118.30841pt x 59.15517pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./images//experiments/11296.jpg> <./images//experiments/11296.png (PNG copy)> <./images//experiments/1160.jpg> <./images//experiments/1160.png (PNG copy)>]
-<images//experiments/len_mean.png, id=725, 903.375pt x 602.25pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24] [25 <./images//experiments/11296.jpg> <./images//experiments/11296.png (PNG copy)> <./images//experiments/1160.jpg> <./images//experiments/1160.png (PNG copy)>]
+<images//experiments/len_mean.png, id=736, 903.375pt x 602.25pt>
 File: images//experiments/len_mean.png Graphic file (type png)
 <use images//experiments/len_mean.png>
-Package pdftex.def Info: images//experiments/len_mean.png  used on input line 124.
+Package pdftex.def Info: images//experiments/len_mean.png  used on input line 155.
 (pdftex.def)             Requested size: 177.45961pt x 118.30669pt.
-<images//experiments/rew_mean.png, id=726, 903.375pt x 602.25pt>
+<images//experiments/rew_mean.png, id=737, 903.375pt x 602.25pt>
 File: images//experiments/rew_mean.png Graphic file (type png)
 <use images//experiments/rew_mean.png>
-Package pdftex.def Info: images//experiments/rew_mean.png  used on input line 130.
+Package pdftex.def Info: images//experiments/rew_mean.png  used on input line 161.
 (pdftex.def)             Requested size: 177.45961pt x 118.30669pt.
-<images//experiments/success_mean.png, id=727, 903.375pt x 602.25pt>
+<images//experiments/success_mean.png, id=738, 903.375pt x 602.25pt>
 File: images//experiments/success_mean.png Graphic file (type png)
 <use images//experiments/success_mean.png>
-Package pdftex.def Info: images//experiments/success_mean.png  used on input line 137.
+Package pdftex.def Info: images//experiments/success_mean.png  used on input line 168.
 (pdftex.def)             Requested size: 177.45961pt x 118.30669pt.
- [25] [26 <./images//experiments/len_mean.png (PNG copy)> <./images//experiments/rew_mean.png (PNG copy)> <./images//experiments/success_mean.png (PNG copy)>]
-<images//experiments/bug.png, id=741, 685.56125pt x 416.55624pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26]
+<images//experiments/bug.png, id=746, 685.56125pt x 416.55624pt>
 File: images//experiments/bug.png Graphic file (type png)
 <use images//experiments/bug.png>
-Package pdftex.def Info: images//experiments/bug.png  used on input line 147.
+Package pdftex.def Info: images//experiments/bug.png  used on input line 186.
 (pdftex.def)             Requested size: 197.17868pt x 119.80666pt.
- [27 <./images//experiments/bug.png>]
-<images//experiments/badrealagentstart.png, id=751, 363.321pt x 218.781pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27 <./images//experiments/len_mean.png (PNG copy)> <./images//experiments/rew_mean.png (PNG copy)> <./images//experiments/success_mean.png (PNG copy)>]
+<images//experiments/badrealagentstart.png, id=753, 363.321pt x 218.781pt>
 File: images//experiments/badrealagentstart.png Graphic file (type png)
 <use images//experiments/badrealagentstart.png>
-Package pdftex.def Info: images//experiments/badrealagentstart.png  used on input line 176.
+Package pdftex.def Info: images//experiments/badrealagentstart.png  used on input line 223.
 (pdftex.def)             Requested size: 197.17868pt x 118.73753pt.
-<images//experiments/badrealagentlatest.png, id=752, 363.321pt x 223.818pt>
+<images//experiments/badrealagentlatest.png, id=754, 363.321pt x 223.818pt>
 File: images//experiments/badrealagentlatest.png Graphic file (type png)
 <use images//experiments/badrealagentlatest.png>
-Package pdftex.def Info: images//experiments/badrealagentlatest.png  used on input line 182.
+Package pdftex.def Info: images//experiments/badrealagentlatest.png  used on input line 229.
 (pdftex.def)             Requested size: 197.17868pt x 121.47122pt.
- [28 <./images//experiments/badrealagentstart.png> <./images//experiments/badrealagentlatest.png>]
-<images//experiments/s2r.png, id=765, 643.40375pt x 239.89626pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28 <./images//experiments/bug.png>]
+Underfull \vbox (badness 5592) has occurred while \output is active []
+
+ [29 <./images//experiments/badrealagentstart.png> <./images//experiments/badrealagentlatest.png>]
+<images//experiments/s2r.png, id=776, 643.40375pt x 239.89626pt>
 File: images//experiments/s2r.png Graphic file (type png)
 <use images//experiments/s2r.png>
-Package pdftex.def Info: images//experiments/s2r.png  used on input line 201.
+Package pdftex.def Info: images//experiments/s2r.png  used on input line 268.
 (pdftex.def)             Requested size: 236.61682pt x 88.22212pt.
-<images//experiments/r2s.png, id=766, 642.4pt x 241.90375pt>
+<images//experiments/r2s.png, id=777, 642.4pt x 241.90375pt>
 File: images//experiments/r2s.png Graphic file (type png)
 <use images//experiments/r2s.png>
-Package pdftex.def Info: images//experiments/r2s.png  used on input line 207.
+Package pdftex.def Info: images//experiments/r2s.png  used on input line 274.
 (pdftex.def)             Requested size: 236.61682pt x 89.10065pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images//experiments/latentr2s.png, id=768, 462.528pt x 346.896pt>
+ [30 <./images//experiments/s2r.png> <./images//experiments/r2s.png>]
+<images//experiments/latentr2s.png, id=787, 462.528pt x 346.896pt>
 File: images//experiments/latentr2s.png Graphic file (type png)
 <use images//experiments/latentr2s.png>
-Package pdftex.def Info: images//experiments/latentr2s.png  used on input line 218.
+Package pdftex.def Info: images//experiments/latentr2s.png  used on input line 289.
 (pdftex.def)             Requested size: 197.17868pt x 147.8867pt.
-<images//experiments/latents2r.png, id=769, 462.528pt x 346.896pt>
+<images//experiments/latents2r.png, id=788, 462.528pt x 346.896pt>
 File: images//experiments/latents2r.png Graphic file (type png)
 <use images//experiments/latents2r.png>
-Package pdftex.def Info: images//experiments/latents2r.png  used on input line 224.
+Package pdftex.def Info: images//experiments/latents2r.png  used on input line 295.
 (pdftex.def)             Requested size: 197.17868pt x 147.8867pt.
-<images//experiments/0_.jpg, id=771, 321.2pt x 240.9pt>
+<images//experiments/0_.jpg, id=792, 321.2pt x 240.9pt>
 File: images//experiments/0_.jpg Graphic file (type jpg)
 <use images//experiments/0_.jpg>
-Package pdftex.def Info: images//experiments/0_.jpg  used on input line 235.
+Package pdftex.def Info: images//experiments/0_.jpg  used on input line 310.
 (pdftex.def)             Requested size: 130.13864pt x 97.60439pt.
-<images//experiments/0__.jpg, id=772, 321.2pt x 240.9pt>
+<images//experiments/0__.jpg, id=793, 321.2pt x 240.9pt>
 File: images//experiments/0__.jpg Graphic file (type jpg)
 <use images//experiments/0__.jpg>
-Package pdftex.def Info: images//experiments/0__.jpg  used on input line 241.
+Package pdftex.def Info: images//experiments/0__.jpg  used on input line 316.
 (pdftex.def)             Requested size: 130.13864pt x 97.60439pt.
-<images//experiments/0___.jpg, id=773, 321.2pt x 240.9pt>
+<images//experiments/0___.jpg, id=794, 321.2pt x 240.9pt>
 File: images//experiments/0___.jpg Graphic file (type jpg)
 <use images//experiments/0___.jpg>
-Package pdftex.def Info: images//experiments/0___.jpg  used on input line 247.
+Package pdftex.def Info: images//experiments/0___.jpg  used on input line 322.
 (pdftex.def)             Requested size: 130.13864pt x 97.60439pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images//experiments/aligned_latentr2s.png, id=774, 462.528pt x 346.896pt>
+<images//experiments/aligned_latentr2s.png, id=796, 462.528pt x 346.896pt>
 File: images//experiments/aligned_latentr2s.png Graphic file (type png)
 <use images//experiments/aligned_latentr2s.png>
-Package pdftex.def Info: images//experiments/aligned_latentr2s.png  used on input line 258.
+Package pdftex.def Info: images//experiments/aligned_latentr2s.png  used on input line 335.
 (pdftex.def)             Requested size: 197.17868pt x 147.8867pt.
-<images//experiments/aligned_latents2r.png, id=775, 462.528pt x 346.896pt>
+<images//experiments/aligned_latents2r.png, id=797, 462.528pt x 346.896pt>
 File: images//experiments/aligned_latents2r.png Graphic file (type png)
 <use images//experiments/aligned_latents2r.png>
-Package pdftex.def Info: images//experiments/aligned_latents2r.png  used on input line 264.
+Package pdftex.def Info: images//experiments/aligned_latents2r.png  used on input line 341.
 (pdftex.def)             Requested size: 197.17868pt x 147.8867pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29]
-<images//experiments/path_rec.png, id=784, 462.528pt x 346.896pt>
+[31 <./images//experiments/latentr2s.png> <./images//experiments/latents2r.png>]
+<images//experiments/badsimdist1.jpg, id=808, 321.2pt x 237.88875pt>
+File: images//experiments/badsimdist1.jpg Graphic file (type jpg)
+<use images//experiments/badsimdist1.jpg>
+Package pdftex.def Info: images//experiments/badsimdist1.jpg  used on input line 356.
+(pdftex.def)             Requested size: 94.64793pt x 70.09671pt.
+
+Underfull \hbox (badness 2376) in paragraph at lines 357--357
+[]\T1/uop/m/n/9 (a) |Pseudo sim-u-lated
+ []
+
+<images//experiments/badsimdist2.jpg, id=809, 319.1925pt x 239.89626pt>
+File: images//experiments/badsimdist2.jpg Graphic file (type jpg)
+<use images//experiments/badsimdist2.jpg>
+Package pdftex.def Info: images//experiments/badsimdist2.jpg  used on input line 362.
+(pdftex.def)             Requested size: 94.64793pt x 71.13483pt.
+
+Underfull \hbox (badness 2042) in paragraph at lines 363--363
+[]\T1/uop/m/n/9 (b) |Clos-est sim-u-lated
+ []
+
+<images//experiments/goodsimdist1.jpg, id=810, 322.20375pt x 239.89626pt>
+File: images//experiments/goodsimdist1.jpg Graphic file (type jpg)
+<use images//experiments/goodsimdist1.jpg>
+Package pdftex.def Info: images//experiments/goodsimdist1.jpg  used on input line 368.
+(pdftex.def)             Requested size: 94.64793pt x 70.46861pt.
+
+Underfull \hbox (badness 2818) in paragraph at lines 369--369
+[]\T1/uop/m/n/9 (c) |Pseudo sim-u-lated
+ []
+
+<images//experiments/goodsimdist2.jpg, id=811, 321.2pt x 238.8925pt>
+File: images//experiments/goodsimdist2.jpg Graphic file (type jpg)
+<use images//experiments/goodsimdist2.jpg>
+Package pdftex.def Info: images//experiments/goodsimdist2.jpg  used on input line 374.
+(pdftex.def)             Requested size: 94.64793pt x 70.39247pt.
+
+Underfull \hbox (badness 2042) in paragraph at lines 375--375
+[]\T1/uop/m/n/9 (d) |Clos-est sim-u-lated
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images//experiments/badrealreal1.jpg, id=820, 321.2pt x 239.89626pt>
+File: images//experiments/badrealreal1.jpg Graphic file (type jpg)
+<use images//experiments/badrealreal1.jpg>
+Package pdftex.def Info: images//experiments/badrealreal1.jpg  used on input line 386.
+(pdftex.def)             Requested size: 94.64793pt x 70.68825pt.
+<images//experiments/badrealreal2.jpg, id=821, 321.2pt x 238.8925pt>
+File: images//experiments/badrealreal2.jpg Graphic file (type jpg)
+<use images//experiments/badrealreal2.jpg>
+Package pdftex.def Info: images//experiments/badrealreal2.jpg  used on input line 392.
+(pdftex.def)             Requested size: 94.64793pt x 70.39247pt.
+<images//experiments/goodrealdist1.jpg, id=822, 321.2pt x 240.9pt>
+File: images//experiments/goodrealdist1.jpg Graphic file (type jpg)
+<use images//experiments/goodrealdist1.jpg>
+Package pdftex.def Info: images//experiments/goodrealdist1.jpg  used on input line 398.
+(pdftex.def)             Requested size: 94.64793pt x 70.98401pt.
+<images//experiments/goodrealdist2.jpg, id=823, 321.2pt x 240.9pt>
+File: images//experiments/goodrealdist2.jpg Graphic file (type jpg)
+<use images//experiments/goodrealdist2.jpg>
+Package pdftex.def Info: images//experiments/goodrealdist2.jpg  used on input line 404.
+(pdftex.def)             Requested size: 94.64793pt x 70.98401pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[32 <./images//experiments/0_.jpg> <./images//experiments/0__.jpg> <./images//experiments/0___.jpg> <./images//experiments/aligned_latentr2s.png> <./images//experiments/aligned_latents2r.png>]
+<images//experiments/path_rec.png, id=841, 462.528pt x 346.896pt>
 File: images//experiments/path_rec.png Graphic file (type png)
 <use images//experiments/path_rec.png>
-Package pdftex.def Info: images//experiments/path_rec.png  used on input line 277.
+Package pdftex.def Info: images//experiments/path_rec.png  used on input line 420.
 (pdftex.def)             Requested size: 236.61682pt x 177.4651pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images//experiments/badsimdist1.jpg, id=785, 321.2pt x 237.88875pt>
-File: images//experiments/badsimdist1.jpg Graphic file (type jpg)
-<use images//experiments/badsimdist1.jpg>
-Package pdftex.def Info: images//experiments/badsimdist1.jpg  used on input line 287.
-(pdftex.def)             Requested size: 94.64793pt x 70.09671pt.
-<images//experiments/badsimdist2.jpg, id=786, 319.1925pt x 239.89626pt>
-File: images//experiments/badsimdist2.jpg Graphic file (type jpg)
-<use images//experiments/badsimdist2.jpg>
-Package pdftex.def Info: images//experiments/badsimdist2.jpg  used on input line 293.
-(pdftex.def)             Requested size: 94.64793pt x 71.13483pt.
-<images//experiments/goodsimdist1.jpg, id=787, 322.20375pt x 239.89626pt>
-File: images//experiments/goodsimdist1.jpg Graphic file (type jpg)
-<use images//experiments/goodsimdist1.jpg>
-Package pdftex.def Info: images//experiments/goodsimdist1.jpg  used on input line 299.
-(pdftex.def)             Requested size: 94.64793pt x 70.46861pt.
-<images//experiments/goodsimdist2.jpg, id=788, 321.2pt x 238.8925pt>
-File: images//experiments/goodsimdist2.jpg Graphic file (type jpg)
-<use images//experiments/goodsimdist2.jpg>
-Package pdftex.def Info: images//experiments/goodsimdist2.jpg  used on input line 305.
-(pdftex.def)             Requested size: 94.64793pt x 70.39247pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images//experiments/badrealreal1.jpg, id=797, 321.2pt x 239.89626pt>
-File: images//experiments/badrealreal1.jpg Graphic file (type jpg)
-<use images//experiments/badrealreal1.jpg>
-Package pdftex.def Info: images//experiments/badrealreal1.jpg  used on input line 316.
-(pdftex.def)             Requested size: 94.64793pt x 70.68825pt.
-<images//experiments/badrealreal2.jpg, id=798, 321.2pt x 238.8925pt>
-File: images//experiments/badrealreal2.jpg Graphic file (type jpg)
-<use images//experiments/badrealreal2.jpg>
-Package pdftex.def Info: images//experiments/badrealreal2.jpg  used on input line 322.
-(pdftex.def)             Requested size: 94.64793pt x 70.39247pt.
-<images//experiments/goodrealdist1.jpg, id=799, 321.2pt x 240.9pt>
-File: images//experiments/goodrealdist1.jpg Graphic file (type jpg)
-<use images//experiments/goodrealdist1.jpg>
-Package pdftex.def Info: images//experiments/goodrealdist1.jpg  used on input line 328.
-(pdftex.def)             Requested size: 94.64793pt x 70.98401pt.
-<images//experiments/goodrealdist2.jpg, id=800, 321.2pt x 240.9pt>
-File: images//experiments/goodrealdist2.jpg Graphic file (type jpg)
-<use images//experiments/goodrealdist2.jpg>
-Package pdftex.def Info: images//experiments/goodrealdist2.jpg  used on input line 334.
-(pdftex.def)             Requested size: 94.64793pt x 70.98401pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./conclusion.tex [30 <./images//experiments/s2r.png> <./images//experiments/r2s.png>] [31 <./images//experiments/latentr2s.png> <./images//experiments/latents2r.png> <./images//experiments/0_.jpg> <./images//experiments/0__.jpg> <./images//experiments/0___.jpg> <./images//experiments/aligned_latentr2s.png> <./images//experiments/aligned_latents2r.png>] [32 <./images//experiments/path_rec.png> <./images//experiments/badsimdist1.jpg> <./images//experiments/badsimdist2.jpg> <./images//experiments/goodsimdist1.jpg> <./images//experiments/goodsimdist2.jpg> <./images//experiments/badrealreal1.jpg> <./images//experiments/badrealreal2.jpg> <./images//experiments/goodrealdist1.jpg> <./images//experiments/goodrealdist2.jpg>]
+) (./conclusion.tex [33 <./images//experiments/badsimdist1.jpg> <./images//experiments/badsimdist2.jpg> <./images//experiments/goodsimdist1.jpg> <./images//experiments/goodsimdist2.jpg> <./images//experiments/badrealreal1.jpg> <./images//experiments/badrealreal2.jpg> <./images//experiments/goodrealdist1.jpg> <./images//experiments/goodrealdist2.jpg>] [34 <./images//experiments/path_rec.png>]
 Chapter 6.
-) [33
+) [35
 
-] [34
+] [36
 
 ]
 Appendix A.
 (./ae.txt) (./vae.txt)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35] [36] (./usiinf-masterthesis-sample.bbl
-Underfull \hbox (badness 1009) in paragraph at lines 15--19
+ [37] [38] (./usiinf-masterthesis-sample.bbl
+Underfull \hbox (badness 1009) in paragraph at lines 38--42
 []\T1/mdbch/m/n/10 Zhengxue Cheng, Hem-ing Sun, Masaru Takeuchi, and Jiro Katto.  Deep con-vo-lu-tional
  []
 
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.43994pt on input line 24.
-[37
+(Font)              scaled to size 8.43994pt on input line 47.
+[39
 
 
 ]
-Underfull \hbox (badness 3557) in paragraph at lines 117--121
+Underfull \hbox (badness 3557) in paragraph at lines 147--151
 []\T1/mdbch/m/n/10 Antonin Raf-fin.  Learn-ing to drive in 5 min-utes.  []$\T1/fvm/m/n/10 https : / / github . com / araffin /
  []
 
-[38]) [39] (./usiinf-masterthesis-sample.aux (./introduction.aux))
+[40]) [41] (./usiinf-masterthesis-sample.aux (./introduction.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `usiinf-masterthesis-sample.out' has not changed.
-(rerunfilecheck)             Checksum: 5DF80B4BCDF26E047DEDE2EE1E41047F;4834.
+(rerunfilecheck)             Checksum: 32DE68C67D72E051F38018E7F0365B27;5154.
  ) 
 Here is how much of TeX's memory you used:
- 35863 strings out of 478268
- 698099 string characters out of 5846347
- 1519973 words of memory out of 5000000
- 53017 multiletter control sequences out of 15000+600000
- 556577 words of font info for 149 fonts, out of 8000000 for 9000
+ 35876 strings out of 478268
+ 698440 string characters out of 5846347
+ 1518974 words of memory out of 5000000
+ 53030 multiletter control sequences out of 15000+600000
+ 546904 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,12n,131p,3384b,1548s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chb8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chrma.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
-Output written on usiinf-masterthesis-sample.pdf (57 pages, 5578409 bytes).
+ 106i,12n,131p,2712b,1547s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chb8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri8t.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chrma.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
+Output written on usiinf-masterthesis-sample.pdf (55 pages, 7090636 bytes).
 PDF statistics:
- 1088 PDF objects out of 1200 (max. 8388607)
- 877 compressed objects within 9 object streams
- 256 named destinations out of 1000 (max. 500000)
- 666 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1108 PDF objects out of 1200 (max. 8388607)
+ 903 compressed objects within 10 object streams
+ 261 named destinations out of 1000 (max. 500000)
+ 671 words of extra memory for PDF output out of 10000 (max. 10000000)
 

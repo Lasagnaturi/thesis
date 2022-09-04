@@ -1,15 +1,38 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Akkaya et~al.(2019)Akkaya, Andrychowicz, Chociej, Litwin, McGrew,
+  Petron, Paino, Plappert, Powell, Ribas, et~al.]{rubik}
+Ilge Akkaya, Marcin Andrychowicz, Maciek Chociej, Mateusz Litwin, Bob McGrew,
+  Arthur Petron, Alex Paino, Matthias Plappert, Glenn Powell, Raphael Ribas,
+  et~al.
+\newblock Solving rubik's cube with a robot hand.
+\newblock \emph{arXiv preprint arXiv:1910.07113}, 2019.
+
 \bibitem[Alpaydin(2014)]{Alpaydin:2014:IML:2635955}
 Ethem Alpaydin.
 \newblock \emph{Introduction to Machine Learning}.
 \newblock The MIT Press, 2014.
 \newblock ISBN 0262028182, 9780262028189.
+
+\bibitem[Bellemare et~al.(2013)Bellemare, Naddaf, Veness, and Bowling]{atari}
+Marc~G Bellemare, Yavar Naddaf, Joel Veness, and Michael Bowling.
+\newblock The arcade learning environment: An evaluation platform for general
+  agents.
+\newblock \emph{Journal of Artificial Intelligence Research}, 47:\penalty0
+  253--279, 2013.
+
+\bibitem[Berner et~al.(2019)Berner, Brockman, Chan, Cheung, D{\k{e}}biak,
+  Dennison, Farhi, Fischer, Hashme, Hesse, et~al.]{opeaifive}
+Christopher Berner, Greg Brockman, Brooke Chan, Vicki Cheung, Przemys{\l}aw
+  D{\k{e}}biak, Christy Dennison, David Farhi, Quirin Fischer, Shariq Hashme,
+  Chris Hesse, et~al.
+\newblock Dota 2 with large scale deep reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:1912.06680}, 2019.
 
 \bibitem[Cheng et~al.(2018)Cheng, Sun, Takeuchi, and Katto]{8456308}
 Zhengxue Cheng, Heming Sun, Masaru Takeuchi, and Jiro Katto.
@@ -36,6 +59,13 @@ Ian~J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David
   Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
 \newblock Generative adversarial networks, 2014.
 \newblock URL \url{https://arxiv.org/abs/1406.2661}.
+
+\bibitem[Gu et~al.(2017)Gu, Holly, Lillicrap, and Levine]{gu2017deep}
+Shixiang Gu, Ethan Holly, Timothy Lillicrap, and Sergey Levine.
+\newblock Deep reinforcement learning for robotic manipulation with
+  asynchronous off-policy updates.
+\newblock In \emph{2017 IEEE international conference on robotics and
+  automation (ICRA)}, pages 3389--3396. IEEE, 2017.
 
 \bibitem[Haarnoja et~al.(2018)Haarnoja, Zhou, Abbeel, and Levine]{art:sac}
 Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, and Sergey Levine.
@@ -148,6 +178,12 @@ David Silver, Aja Huang, Christopher Maddison, Arthur Guez, Laurent Sifre,
 \newblock \emph{Nature}, 529:\penalty0 484--489, 01 2016.
 \newblock \doi{10.1038/nature16961}.
 
+\bibitem[Smith et~al.(2022)Smith, Kostrikov, and Levine]{smith2022walk}
+Laura Smith, Ilya Kostrikov, and Sergey Levine.
+\newblock A walk in the park: Learning to walk in 20 minutes with model-free
+  reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:2208.07860}, 2022.
+
 \bibitem[Stocco et~al.(2022)Stocco, Pulfer, and Tonella]{stocco-mind}
 Andrea Stocco, Brian Pulfer, and Paolo Tonella.
 \newblock {Mind the Gap! A Study on the Transferability of Virtual vs
@@ -160,6 +196,11 @@ Richard~S. Sutton and Andrew~G. Barto.
 \newblock \emph{Reinforcement Learning: An Introduction}.
 \newblock The MIT Press, second edition, 2018.
 \newblock URL \url{http://incompleteideas.net/book/the-book-2nd.html}.
+
+\bibitem[Van~der Maaten and Hinton(2008)]{tsne}
+Laurens Van~der Maaten and Geoffrey Hinton.
+\newblock Visualizing data using t-sne.
+\newblock \emph{Journal of machine learning research}, 9\penalty0 (11), 2008.
 
 \bibitem[van Otterlo and Wiering(2012)]{vanOtterlo2012}
 Martijn van Otterlo and Marco Wiering.
@@ -176,6 +217,14 @@ Ari Viitala, Rinu Boney, and Juho Kannala.
 \newblock Learning to drive small scale cars from scratch.
 \newblock \emph{CoRR}, abs/2008.00715, 2020.
 \newblock URL \url{https://arxiv.org/abs/2008.00715}.
+
+\bibitem[Vinyals et~al.(2019)Vinyals, Babuschkin, Chung, Mathieu, Jaderberg,
+  Czarnecki, Dudzik, Huang, Georgiev, Powell, et~al.]{alphastar}
+Oriol Vinyals, Igor Babuschkin, Junyoung Chung, Michael Mathieu, Max Jaderberg,
+  Wojciech~M Czarnecki, Andrew Dudzik, Aja Huang, Petko Georgiev, Richard
+  Powell, et~al.
+\newblock Alphastar: Mastering the real-time strategy game starcraft ii.
+\newblock \emph{DeepMind blog}, 2, 2019.
 
 \bibitem[Yarats et~al.(2019)Yarats, Zhang, Kostrikov, Amos, Pineau, and
   Fergus]{DBLP:journals/corr/abs-1910-01741}
