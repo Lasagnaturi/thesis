@@ -1,0 +1,44 @@
+SLIDE 1
+Training a Real world reinforcement learning agent is the main objective of my thesis. In particular, it is a case study using the donkeycar autonomous driving framework. Before we see the actual problem we want to solve I'll present to you an high-level overview of the problem we are trying to solve] and then we'll see all the details after we have seen the background which is necessary to fully understand it.
+
+SLIDE 2
+We want to teach an agent to drive a real scale car using reinforcement learning. So the first component we need is a remote controlled electric car called DonkeyCar, equipped with a camera sensor to collect pictures in front of it. Then we a RL agent which is the brain of our car that takes the decisions based on the pictures of what the car sees. Then of course we need a track to drive on. The agent asks the car to collect a picture, and based on the given picture it indicates what's the action it must take in order to stay on track.
+
+By iterating through these steps we want an agent that is able to drive consistently on a given track.
+
+SLIDE 3
+The track shown is just an example, so now I want to give you some details about the track. Given that we want to train the agent in the real world, we first need a real track, the software institute bought a printed version shown on left from the robocar store, it's 11 meters long and 4 meters wide. This track has been used in other works in the literature and we'll use it too since we consider it complete. In fact, includes Soft and steep turns, left and right turns and a straightaway. 
+
+In order to reduce the training effort, we also have a simulated version on the right built in unity during a previous thesis in the lab. It is particularly helpful to run a few test before moving to the real world.
+
+SLIDE 4
+
+about the car instead we can say it's a 
+
+SLIDE 5
+Unsupervised learning is self-organized learning it explores the underlying patterns in the dataset without clean label of the data. 
+
+Supervised learning instead, learns from previous knowledge already present into the dataset. So it needs labeled dateset. it is generally used for classification and regression problems.
+
+RL instead is neither based on supervised learning nor unsupervised learning. Here the algorithms learn to react to an environment on their own through a trial and error process. Any problem that can be modeled as a sequential decision-making task can be in theory solved with RL. IT is also the framework of our interest and we need to see a few more details about it
+
+SLIDE 11
+
+In a RL algorithms there are 2 main component that interacts with each other. The first one is the environment, it defines the world where agent can leave, and it provides information about its state and the agent state in it. For example, in our experiments it is the the track and the donkeycar. 
+
+The the agent which is the brain, it takes action on the environment based on the actual state by following a policy function pi. The chosen action is sent to the environment the move to the next state. Then the new state and a score for the agent's action is given back to the agent which repeat the process. 
+
+The score is usually call reward, and it's a measures of the action quality. 
+
+The final goal of the agent is to maximized the total reward for a given episode.
+
+This basic RL algorithms are on-policy method which means the optimize the same policy used to take actions in the environments. This is data inefficient since we need to collect new data for any episode and we cannot reuse past experience.
+
+SLIDE 15
+
+As we saw earlier, our agents takes actions based on pictures. Those pictures however are of big size and we want to reduce that size to improve the overall efficiency. Especially because we are tackling a real-time problem and all the steps must accomplished within a certain amount of time. ReL is set of methods to extract features from data that are relevant. In particular, by analyzing other works in the literature we selected 2 methods, AE and VAE. 
+
+AE is an unsupervised learning technique since it lear efficient encoding into a latent space of generally much more smaller dimensionality without the need of labelled data.
+
+In particular, this architecture is composed of an encoder and a decoder. The encoder maps data, or images in our case, into the latent space. The decoder brings it back to the original dimension. When the decoder has learned to reconstruct good images resembling the original one, we can say the AE has learned to exact a set of relevant features. So the encoded image can be safely used as input to the RL AGENT. This make the process more efficient, and besides that, works in the literatures shows how SAC is not able to solve our main task with raw images. 
+
